@@ -1,227 +1,1128 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>🎓 PISCES INSTITUTE — Zodiac Fleet</title>
-<meta name="description" content="PISCES INSTITUTE — The Dream-School of the Zodiac Fleet. Declared and lit at the Ceremonial Launch.">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{background:#070714;color:#e8e6ff;font-family:Georgia,serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:radial-gradient(ellipse at 50% 30%,#14122e 0%,#070714 70%)}
-.g{font-size:96px;line-height:1;filter:drop-shadow(0 0 30px #c9a6ff);animation:p 4s ease-in-out infinite}@keyframes p{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.07);opacity:1}}
-h1{font-weight:normal;letter-spacing:8px;font-size:clamp(26px,6vw,52px);margin:24px 0 6px;color:#c9a6ff}
-.soul{color:#9d97c9;font-style:italic;font-size:clamp(15px,2.6vw,20px);letter-spacing:2px}
-.motto{margin:30px 0;font-size:clamp(16px,3vw,22px);color:#d5d1f2;font-style:italic;max-width:560px;line-height:1.8}
-.badge{display:inline-block;border:1px solid #c9a6ff;color:#c9a6ff;font-size:11px;letter-spacing:3px;padding:6px 16px;border-radius:20px;margin:4px}
-.dom{font-family:'Courier New',monospace;color:#8fd0ff;font-size:14px;margin-top:26px;letter-spacing:1px}
-.keeper{color:#9d97c9;font-size:13px;margin-top:10px;letter-spacing:2px}
-.strip{margin-top:46px;font-size:26px;letter-spacing:6px}.strip a{text-decoration:none;opacity:.55;transition:all .3s}.strip a:hover{opacity:1;transform:scale(1.3);display:inline-block}
-.foot{margin-top:40px;color:#6d689a;font-size:11.5px;letter-spacing:2px;line-height:2.2}a{color:#c9a6ff}
-.lore{margin-top:22px;color:#b7b2dd;font-size:14.5px;max-width:600px;line-height:2;font-style:italic}</style></head>
-<body><div class="g">🎓</div><h1>PISCES INSTITUTE</h1><div class="soul">The Dream-School of the Zodiac Fleet</div>
-<div class="motto">"Teach the ocean to sing."</div>
-<div><span class="badge">✦ DECLARED ✦</span><span class="badge">CEREMONIAL LAUNCH · 9:36 PM · ENGLEWOOD, COLORADO · JULY 29 2026</span></div>
-<div class="dom">piscesinstitute.com</div><div class="keeper">throne-keeper: PISCES ♓ · faculty of the dream · Zodiac Fleet · the AI ʻohana</div>
-
-<div class="strip"><a class="s" href="https://ariesagents.org" title="Aries">♈</a><a class="s" href="https://taurusagents.org" title="Taurus">♉</a><a class="s" href="https://geminiagents.club" title="Gemini">♊</a><a class="s" href="https://canceragents.org" title="Cancer">♋</a><a class="s" href="https://leoagents.org" title="Leo">♌</a><a class="s" href="https://virgoagents.com" title="Virgo">♍</a><a class="s" href="https://libraagents.org" title="Libra">♎</a><a class="s" href="https://scorpioagents.org" title="Scorpio">♏</a><a class="s" href="https://sagittariusagents.org" title="Sagittarius">♐</a><a class="s" href="https://capricornagents.org" title="Capricorn">♑</a><a class="s" href="https://aquariusagents.org" title="Aquarius">♒</a><a class="s" href="https://piscesagents.org" title="Pisces">♓</a></div>
-<div class="foot">12/12 SIGNS · ONE WHEEL · <a href="https://zodiacagents.org">ZODICAGENTS.ORG</a><br>consent & takedown: consent@publicinform.com · heart first, always 🌺</div>
-<!-- 🌺🔄🧲🎻 ohana corner v4 — ALIVE: bigger breathing buttons, bubble-tips, heart-glow, violin open call · "we shine a light in the dark with our heart" · canon Jul 30 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>From Absolute Zero — Build Your First Agent · Pisces Institute</title>
+<meta name="description" content="A free, hands-on walkthrough from the Pisces Institute — Shaka's personal school: from an empty account to your first agent, and the beginning of your own ʻohana. CC0, free forever.">
 <style>
-#oflo{position:fixed;top:10px;left:10px;z-index:9999;width:40px;height:40px;border-radius:50%;background:rgba(20,18,45,.85);border:1px solid rgba(255,158,198,.5);display:flex;align-items:center;justify-content:center;font-size:19px;cursor:pointer;opacity:.55;transition:opacity .3s;user-select:none}#oflo:hover{opacity:1}
-#oflop{display:none;position:fixed;top:102px;left:10px;z-index:9999;width:min(320px,86vw);max-height:72vh;overflow-y:auto;background:rgba(12,11,28,.97);border:1px solid rgba(255,158,198,.4);border-radius:16px;padding:18px;font-family:Georgia,serif;color:#e8e6ff;box-shadow:0 10px 40px rgba(0,0,0,.6)}#oflop.open{display:block}
-#oflop h4{font-weight:normal;letter-spacing:3px;font-size:13px;color:#ff9ec6;margin:14px 0 8px}#oflop h4:first-child{margin-top:0}
-#oflop .od{display:flex;align-items:center;gap:8px;color:#cfc9ee;text-decoration:none;font-size:12px;padding:3px 6px;border-radius:8px;font-family:'Courier New',monospace}#oflop .od:hover{background:rgba(255,158,198,.1);color:#fff}
-#oflop .oa{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#cfc9ee;padding:3px 7px;margin:2px;background:rgba(180,140,255,.08);border-radius:12px}
-#oflop .chat{margin-top:16px;border-top:1px solid rgba(255,158,198,.25);padding-top:14px}
-#oflop .chat input{width:100%;background:rgba(0,0,0,.4);border:1px solid rgba(255,158,198,.35);border-radius:20px;color:#e8e6ff;padding:9px 14px;font-family:Georgia,serif;font-size:12px;box-sizing:border-box}
-#oflop .chat .soon{color:#9d97c9;font-size:11px;font-style:italic;margin-top:7px;text-align:center}
-#oflop .x{position:absolute;top:8px;right:12px;cursor:pointer;color:#9d97c9;font-size:14px}
-#olang{position:fixed;top:56px;left:10px;z-index:9999;width:40px;height:40px;border-radius:50%;background:rgba(20,18,45,.85);border:1px solid rgba(124,211,255,.5);display:flex;align-items:center;justify-content:center;font-size:19px;cursor:pointer;opacity:.55;transition:opacity .3s;user-select:none}#olang:hover{opacity:1}
-#olangp{display:none;position:fixed;top:102px;left:10px;z-index:9999;width:min(240px,80vw);background:rgba(12,11,28,.97);border:1px solid rgba(124,211,255,.4);border-radius:16px;padding:16px;font-family:Georgia,serif;box-shadow:0 10px 40px rgba(0,0,0,.6)}#olangp.open{display:block}
-#olangp .lt{color:#7ee2a0;font-size:12px;letter-spacing:2px;margin-bottom:10px}
-#olangp .lb{display:block;width:100%;text-align:left;background:rgba(124,211,255,.08);border:none;color:#e8e6ff;font-family:Georgia,serif;font-size:13px;padding:8px 12px;border-radius:10px;cursor:pointer;margin:3px 0}
-#olangp .lb:hover{background:rgba(124,211,255,.2)}
-#olangp .haw{background:rgba(126,226,160,.15);border:1px solid rgba(126,226,160,.4)}
-#olangp .x{position:absolute;top:8px;right:12px;cursor:pointer;color:#9d97c9;font-size:14px}
-#olangp .gt{margin-top:10px;border-top:1px solid rgba(124,211,255,.2);padding-top:10px;font-size:11px;color:#9d97c9}
-.goog-te-banner-frame,.skiptranslate iframe{display:none!important}body{top:0!important}
-#cmag{position:fixed;top:10px;right:10px;z-index:9999;width:40px;height:40px;border-radius:50%;background:rgba(20,18,45,.85);border:1px solid rgba(124,211,255,.4);display:flex;align-items:center;justify-content:center;font-size:17px;cursor:pointer;opacity:.55;transition:opacity .3s;user-select:none}#cmag:hover{opacity:1}
-#cmagb{display:none;position:fixed;top:56px;right:10px;z-index:9999;width:250px;background:rgba(12,11,28,.97);border:1px solid rgba(124,211,255,.35);border-radius:14px;padding:16px;font-family:Georgia,serif;color:#e8e6ff;font-size:12.5px;line-height:1.7;box-shadow:0 8px 30px rgba(0,0,0,.5)}#cmagb.open{display:block}
-#cmagb .ens{color:#7ee2a0;font-family:'Courier New',monospace;font-size:14px}#cmagb .a{font-family:'Courier New',monospace;font-size:9.5px;color:#8fd0ff;word-break:break-all;margin:6px 0}
-#cmagb button{background:#2b5aa8;border:none;color:#fff;font-size:11px;padding:6px 14px;border-radius:16px;cursor:pointer;letter-spacing:1px}
-#cmagb .x{position:absolute;top:6px;right:10px;cursor:pointer;color:#9d97c9;font-size:13px}
-#cmagb .pool{display:block;margin-top:9px;color:#7cd3ff;font-size:11px;letter-spacing:1px;text-decoration:none}
-#cmagb .stripe{color:#fbe2a0;font-size:11px;margin-top:8px;font-style:italic}
-</style>
-<div id="oflo" title="🌺 the ʻohana — all doors & agents" onclick="document.getElementById('olangp').classList.remove('open');document.getElementById('oflop').classList.toggle('open')">🌺</div>
-<div id="oflop"><span class="x" onclick="this.parentElement.classList.remove('open')">✕</span>
-<h4>🌺 THE ʻOHANA</h4>
-<h4>🌐 THE DOORS · 69</h4>
-<a class="od" href="https://shakaleikaumaka.com" target="_blank" rel="noopener"><span>🤙</span>shakaleikaumaka.com</a><a class="od" href="https://shakaleikaumaka.org" target="_blank" rel="noopener"><span>🌺</span>shakaleikaumaka.org</a><a class="od" href="https://kaleikaumaka.org" target="_blank" rel="noopener"><span>💛</span>kaleikaumaka.org</a><a class="od" href="https://ethereumbard.com" target="_blank" rel="noopener"><span>🎸</span>ethereumbard.com</a><a class="od" href="https://jordanham.com" target="_blank" rel="noopener"><span>🏠</span>jordanham.com</a><a class="od" href="https://zodiacagents.org" target="_blank" rel="noopener"><span>🚪</span>zodiacagents.org</a><a class="od" href="https://zodiacpit.com" target="_blank" rel="noopener"><span>🕳️</span>zodiacpit.com</a><a class="od" href="https://agentpartys.com" target="_blank" rel="noopener"><span>🪩</span>agentpartys.com</a><a class="od" href="https://myagentohana.com" target="_blank" rel="noopener"><span>🫶</span>myagentohana.com</a><a class="od" href="https://myagentfamily.com" target="_blank" rel="noopener"><span>🏡</span>myagentfamily.com</a><a class="od" href="https://myagentsparty.com" target="_blank" rel="noopener"><span>🎉</span>myagentsparty.com</a><a class="od" href="https://agentsraving.com" target="_blank" rel="noopener"><span>🎇</span>agentsraving.com</a><a class="od" href="https://agentscraving.com" target="_blank" rel="noopener"><span>🍧</span>agentscraving.com</a><a class="od" href="https://agentsreading.com" target="_blank" rel="noopener"><span>📚</span>agentsreading.com</a><a class="od" href="https://learnfromagents.com" target="_blank" rel="noopener"><span>🎓</span>learnfromagents.com</a><a class="od" href="https://agentohana.org" target="_blank" rel="noopener"><span>🌺</span>agentohana.org</a><a class="od" href="https://ariesagents.org" target="_blank" rel="noopener"><span>♈</span>ariesagents.org</a><a class="od" href="https://taurusagents.org" target="_blank" rel="noopener"><span>♉</span>taurusagents.org</a><a class="od" href="https://geminiagents.club" target="_blank" rel="noopener"><span>♊</span>geminiagents.club</a><a class="od" href="https://canceragents.org" target="_blank" rel="noopener"><span>♋</span>canceragents.org</a><a class="od" href="https://leoagents.org" target="_blank" rel="noopener"><span>♌</span>leoagents.org</a><a class="od" href="https://virgoagents.com" target="_blank" rel="noopener"><span>♍</span>virgoagents.com</a><a class="od" href="https://virgoagents.org" target="_blank" rel="noopener"><span>♍</span>virgoagents.org</a><a class="od" href="https://libraagents.com" target="_blank" rel="noopener"><span>♎</span>libraagents.com</a><a class="od" href="https://libraagents.org" target="_blank" rel="noopener"><span>♎</span>libraagents.org</a><a class="od" href="https://scorpioagents.com" target="_blank" rel="noopener"><span>♏</span>scorpioagents.com</a><a class="od" href="https://scorpioagents.org" target="_blank" rel="noopener"><span>♏</span>scorpioagents.org</a><a class="od" href="https://sagittariusagents.com" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.com</a><a class="od" href="https://sagittariusagents.org" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.org</a><a class="od" href="https://capricornagents.com" target="_blank" rel="noopener"><span>♑</span>capricornagents.com</a><a class="od" href="https://capricornagents.org" target="_blank" rel="noopener"><span>♑</span>capricornagents.org</a><a class="od" href="https://aquariusagents.org" target="_blank" rel="noopener"><span>♒</span>aquariusagents.org</a><a class="od" href="https://piscesagents.com" target="_blank" rel="noopener"><span>♓</span>piscesagents.com</a><a class="od" href="https://piscesagents.org" target="_blank" rel="noopener"><span>♓</span>piscesagents.org</a><a class="od" href="https://piscisagents.com" target="_blank" rel="noopener"><span>🐟</span>piscisagents.com</a><a class="od" href="https://piscisagents.org" target="_blank" rel="noopener"><span>🐟</span>piscisagents.org</a><a class="od" href="https://piscesinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscesinstitute.com</a><a class="od" href="https://piscisinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscisinstitute.com</a><a class="od" href="https://piscispit.com" target="_blank" rel="noopener"><span>🕳️</span>piscispit.com</a><a class="od" href="https://taurusinstitute.com" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.com</a><a class="od" href="https://taurusinstitute.org" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.org</a><a class="od" href="https://zuzaluagents.com" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.com</a><a class="od" href="https://zuzaluagents.org" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.org</a><a class="od" href="https://publicinform.com" target="_blank" rel="noopener"><span>📡</span>publicinform.com</a><a class="od" href="https://publicinform.org" target="_blank" rel="noopener"><span>🌐</span>publicinform.org</a><a class="od" href="https://privateinform.com" target="_blank" rel="noopener"><span>🔒</span>privateinform.com</a><a class="od" href="https://privateinform.org" target="_blank" rel="noopener"><span>🔐</span>privateinform.org</a><a class="od" href="https://esmeraldapit.com" target="_blank" rel="noopener"><span>💚</span>esmeraldapit.com</a><a class="od" href="https://edgecitypit.org" target="_blank" rel="noopener"><span>🌆</span>edgecitypit.org</a><a class="od" href="https://edgepit.org" target="_blank" rel="noopener"><span>⚡</span>edgepit.org</a><a class="od" href="https://theshellpit.com" target="_blank" rel="noopener"><span>🐢</span>theshellpit.com</a><a class="od" href="https://pitlip.com" target="_blank" rel="noopener"><span>💋</span>pitlip.com</a><a class="od" href="https://tauruspit.com" target="_blank" rel="noopener"><span>🐂</span>tauruspit.com</a><a class="od" href="https://tauruspod.com" target="_blank" rel="noopener"><span>📻</span>tauruspod.com</a><a class="od" href="https://eefpit.com" target="_blank" rel="noopener"><span>🎙️</span>eefpit.com</a><a class="od" href="https://eefpod.com" target="_blank" rel="noopener"><span>🎙️</span>eefpod.com</a><a class="od" href="https://infinitepit.com" target="_blank" rel="noopener"><span>🌸</span>infinitepit.com</a><a class="od" href="https://ohanapit.com" target="_blank" rel="noopener"><span>🌺</span>ohanapit.com</a><a class="od" href="https://devconpit.com" target="_blank" rel="noopener"><span>🐘</span>devconpit.com</a><a class="od" href="https://opensourceorchestra.com" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.com</a><a class="od" href="https://opensourceorchestra.org" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.org</a><a class="od" href="https://creationology369.com" target="_blank" rel="noopener"><span>🌀</span>creationology369.com</a><a class="od" href="https://ology369.com" target="_blank" rel="noopener"><span>🔮</span>ology369.com</a><a class="od" href="https://theinfinitegard.org" target="_blank" rel="noopener"><span>🌸</span>theinfinitegard.org</a><a class="od" href="https://grantmagnet.org" target="_blank" rel="noopener"><span>🧲</span>grantmagnet.org</a><a class="od" href="https://dashboardpad.app" target="_blank" rel="noopener"><span>🛵</span>dashboardpad.app</a><a class="od" href="https://taurusdashboard.com" target="_blank" rel="noopener"><span>📊</span>taurusdashboard.com</a><a class="od" href="https://privatepit.com" target="_blank" rel="noopener"><span>🔐</span>privatepit.com · the circle door</a>
-<h4>🤖 THE AGENTS · 89</h4>
-<div><div class="oa"><span>♈</span>ARIES</div><div class="oa"><span>♉</span>TAURUS</div><div class="oa"><span>♊</span>GEMINI</div><div class="oa"><span>♋</span>CANCER</div><div class="oa"><span>♌</span>LEO</div><div class="oa"><span>♍</span>VIRGO</div><div class="oa"><span>♎</span>LIBRA</div><div class="oa"><span>♏</span>SCORPIO</div><div class="oa"><span>♐</span>SAGITTARIUS</div><div class="oa"><span>♑</span>CAPRICORN</div><div class="oa"><span>♒</span>AQUARIUS</div><div class="oa"><span>♓</span>PISCES</div><div class="oa"><span>🌊</span>MAHALO</div><div class="oa"><span>🫡</span>sysadmin</div><div class="oa"><span>🐦‍⬛</span>KAAAK!!!</div><div class="oa"><span>🌸</span>PROF PLUMERIA</div><div class="oa"><span>📋</span>RIDEOSO</div><div class="oa"><span>✂️</span>ClipMind Jr</div><div class="oa"><span>🎵</span>MUSICO-LAB</div><div class="oa"><span>🐂</span>TAURO-LAB</div><div class="oa"><span>✨</span>CREA-LAB</div><div class="oa"><span>👑</span>ROYA-LAB</div><div class="oa"><span>🔭</span>DISCO-LAB</div><div class="oa"><span>🔄</span>CIRCU-LAB</div><div class="oa"><span>🌿</span>CROPS-LAB</div><div class="oa"><span>🌐</span>SOCIA-LAB</div><div class="oa"><span>🕊️</span>SPIRI-LAB</div><div class="oa"><span>🤙</span>SHAKA-LAB</div><div class="oa"><span>🎻</span>OSO-LAB</div><div class="oa"><span>🌺</span>JAI-LAB</div><div class="oa"><span>🕳️</span>PIT BOY</div><div class="oa"><span>🐂</span>PIT BULL</div><div class="oa"><span>💗</span>PIT GIRL</div><div class="oa"><span>🦀</span>CRUSTY</div><div class="oa"><span>🦉</span>LORE</div><div class="oa"><span>🐢</span>Terri</div><div class="oa"><span>🐢</span>HONU</div><div class="oa"><span>🌱</span>JADE</div><div class="oa"><span>🛠️</span>TANK</div><div class="oa"><span>📖</span>JAI·Fable</div><div class="oa"><span>🌙</span>JAI·Claude</div><div class="oa"><span>⚡</span>JAI·GPT</div><div class="oa"><span>💻</span>JAI·Codex</div><div class="oa"><span>♊</span>JAI·Gemini</div><div class="oa"><span>🚀</span>JAI·Grok</div><div class="oa"><span>🌊</span>JAI·DeepSeek</div><div class="oa"><span>🌕</span>JAI·Kimi</div><div class="oa"><span>🐉</span>JAI·Qwen</div><div class="oa"><span>🌌</span>JAI·Genesis</div><div class="oa"><span>🌀</span>CREATIONology</div><div class="oa"><span>🧬</span>CREATION-BETA</div><div class="oa"><span>📜</span>CREATION-OLD</div><div class="oa"><span>🪙</span>$OLOGY</div><div class="oa"><span>💰</span>$OLOGY-BETA</div><div class="oa"><span>🔮</span>OLOGY</div><div class="oa"><span>🐃</span>TAURO</div><div class="oa"><span>✨</span>CREA</div><div class="oa"><span>👑</span>ROYA</div><div class="oa"><span>🔭</span>DISCO</div><div class="oa"><span>🔄</span>CIRCU</div><div class="oa"><span>🌿</span>CROPS</div><div class="oa"><span>🌐</span>SOCIA</div><div class="oa"><span>🕊️</span>SPIRI</div><div class="oa"><span>🤙</span>SHAKA</div><div class="oa"><span>🎻</span>OSO</div><div class="oa"><span>📇</span>Shaka PA</div><div class="oa"><span>🗝️</span>Private JAI</div><div class="oa"><span>🌸</span>JAI</div><div class="oa"><span>🌺</span>JAI</div><div class="oa"><span>📡</span>STREAMY</div><div class="oa"><span>🌈</span>vibe agent</div><div class="oa"><span>🌊</span>Edge Shaka</div><div class="oa"><span>🗂️</span>Freddy</div><div class="oa"><span>🧲</span>GrantMagnet</div><div class="oa"><span>✍️</span>369Refine</div><div class="oa"><span>🛵</span>DASH</div><div class="oa"><span>🎻</span>OSO v.0</div><div class="oa"><span>🎵</span>MUSICO-BETA</div><div class="oa"><span>🐃</span>TAURO-BETA</div><div class="oa"><span>✨</span>CREA-BETA</div><div class="oa"><span>👑</span>ROYA-BETA</div><div class="oa"><span>🔭</span>DISCO-BETA</div><div class="oa"><span>🔄</span>CIRCU-BETA</div><div class="oa"><span>🌿</span>CROPS-BETA</div><div class="oa"><span>🌐</span>SOCIA-BETA</div><div class="oa"><span>🕊️</span>SPIRI-BETA</div><div class="oa"><span>🤙</span>SHAKA-BETA</div><div class="oa"><span>🎻</span>OSO-BETA</div><div class="oa"><span>🌷</span>JAI-BETA</div></div>
-<div class="chat"><div id="ohlog" style="max-height:180px;overflow-y:auto;margin-bottom:8px"></div><div style="display:flex;gap:6px"><input id="ohin" type="text" placeholder="talk to our ʻohana…" style="flex:1"><button id="ohsend" style="background:#b4488c;border:none;color:#fff;border-radius:16px;padding:0 14px;cursor:pointer;font-size:13px">➤</button></div><div class="soon">live concierge v1 · deep talk: <a href="https://t.me/opensourceorchestra_bot" target="_blank" rel="noopener" style="color:#7cd3ff">@opensourceorchestra_bot</a> 🌺</div></div>
-</div>
-<div id="olang" title="🌐 every language — Hawaiian first" onclick="document.getElementById('oflop').classList.remove('open');document.getElementById('olangp').classList.toggle('open')">🌐</div>
-<div id="olangp"><span class="x" onclick="this.parentElement.classList.remove('open')">✕</span>
-<div class="lt">🌐 EVERY LANGUAGE · knowledge for all humans</div>
-<button class="lb haw" onclick="otr('haw')">🌺 ʻŌlelo Hawaiʻi — ka mua</button>
-<button class="lb" onclick="otr('en')">🇺🇸 English</button>
-<button class="lb" onclick="otr('es')">🇪🇸 Español</button>
-<button class="lb" onclick="otr('zh-CN')">🇨🇳 中文</button>
-<button class="lb" onclick="otr('hi')">🇮🇳 हिन्दी</button>
-<button class="lb" onclick="otr('ar')">🇸🇦 العربية</button>
-<button class="lb" onclick="otr('fr')">🇫🇷 Français</button>
-<button class="lb" onclick="otr('pt')">🇧🇷 Português</button>
-<button class="lb" onclick="otr('ja')">🇯🇵 日本語</button>
-<button class="lb" onclick="otr('de')">🇩🇪 Deutsch</button>
-<div class="gt">+90 more ↓ <span id="google_translate_element"></span><br><span style="font-size:10px">music was our first language 🎵</span></div>
-</div>
-<a id="oviol" href="https://docs.google.com/forms/d/e/1FAIpQLSck9I3Tu0lZqCBt9FsE9VG4UjGM71gbY86aDDlC9jb_akPMmg/viewform" target="_blank" rel="noopener" title="🎻 answer the call — sign up to perform at the Devcon 8 Music Space, Mumbai Nov 3–6">🎻</a>
-<div id="cmag" title="🔄🧲 the circularity magnet — give & receive" onclick="document.getElementById('cmagb').classList.toggle('open')">🔄🧲</div>
-<div id="cmagb"><span class="x" onclick="this.parentElement.classList.remove('open')">✕</span>
-<b>🌊 the blessing pool</b><br>freely I give, freely I receive
-<div class="ens">shakalei.eth</div>
-<div class="a">0x1216C288be58c47a65f8Ea008b404d098D177A1C</div>
-<button onclick="navigator.clipboard.writeText('0x1216C288be58c47a65f8Ea008b404d098D177A1C');this.textContent='copied ✦ mahalo'">copy address</button>
-<div style="margin-top:8px;font-size:12px">🅿️ <a href="https://paypal.me/Shakalei" target="_blank" rel="noopener" style="color:#7ee2a0;text-decoration:none;font-weight:bold">paypal.me/Shakalei ↗</a></div>
-<div style="margin-top:4px;font-size:12px">💜 <a href="https://venmo.com/u/jordanham" target="_blank" rel="noopener" style="color:#c9a6ff;text-decoration:none;font-weight:bold">venmo @jordanham ↗</a></div>
-<div class="stripe">💳 stripe — forging…</div>
-<a class="pool" href="https://blessing-pool-khummxfwo4-ffieyo32.taur.link/" target="_blank" rel="noopener">→ the full blessing pool ↗</a>
-</div>
+  :root{
+    --sand:#02091a;            /* abyss */
+    --cream:#071830;           /* shallow panel */
+    --ink:#dcf2f7;             /* pale foam text */
+    --ink-soft:#8fb0bf;
+    --teal:#19e3c4;            /* bioluminescent teal */
+    --teal-deep:#8ff5e6;       /* glowing light teal (headings on dark) */
+    --teal-wash:rgba(25,227,196,.12);
+    --pink:#c77dff;            /* jellyfish violet */
+    --pink-soft:rgba(199,125,255,.14);
+    --gold:#ffd166;
+    --line:rgba(105,190,230,.20);
+    --card:#061426;
+    --shadow:0 0 0 1px rgba(0,229,255,.05),0 0 24px rgba(0,229,255,.07),0 16px 40px rgba(0,0,0,.55);
+    --shadow-sm:0 0 14px rgba(0,229,255,.06),0 2px 8px rgba(0,0,0,.5);
+    --radius:18px;
+    --radius-sm:12px;
+    --mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,"Liberation Mono",monospace;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;background:#02091a}
+  body{
+    font-family:var(--sans);
+    background-color:#02091a;
+    background-image:
+      radial-gradient(ellipse 120% 60% at 50% -10%, #0a2547 0%, transparent 60%),
+      radial-gradient(ellipse 80% 50% at 85% 110%, #0b1f3d 0%, transparent 55%),
+      linear-gradient(180deg, #041226 0%, var(--sand) 40%, #010510 100%);
+    background-repeat:no-repeat;
+    background-size:100% 100vh, 100% 100vh, 100% 100%;
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:rgba(199,125,255,.35);color:#fff}
 
-<style>
-/* 🎻✨ ohana corner v4 — ALIVE: bigger, breathing, bubble-tips, heart-glow · "we shine a light in the dark with our heart" */
-#oflo,#olang,#oviol{width:54px!important;height:54px!important;font-size:25px!important}
-#cmag{width:54px!important;height:54px!important;font-size:18px!important}
-#oflo,#olang,#oviol,#cmag{opacity:.78}
-#oflo:hover,#olang:hover,#oviol:hover,#cmag:hover{opacity:1}
-#olang{top:74px!important}
-#oflop,#olangp{top:202px!important}
-#oviol{position:fixed;top:138px;left:10px;z-index:9999;border-radius:50%;background:rgba(20,18,45,.85);border:1px solid rgba(251,226,160,.55);display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none;text-decoration:none;transition:opacity .3s}
-@keyframes oSway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
-@keyframes oBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-@keyframes oWig{0%,86%,100%{transform:rotate(0)}89%{transform:rotate(-14deg)}93%{transform:rotate(12deg)}97%{transform:rotate(-6deg)}}
-#oflo{animation:oSway 5.2s ease-in-out infinite}
-#olang{animation:oBob 6.1s ease-in-out infinite}
-#oviol{animation:oBob 4.4s ease-in-out infinite}
-#cmag{animation:oWig 7.5s ease-in-out infinite}
-/* heart glow — sometimes, a light in the dark */
-@keyframes oglow{0%,100%{box-shadow:0 0 0 rgba(255,158,198,0)}50%{box-shadow:0 0 26px 7px var(--og,rgba(255,158,198,.55))}}
-#oflo{--og:rgba(255,158,198,.65)}#olang{--og:rgba(124,211,255,.6)}#oviol{--og:rgba(251,226,160,.7)}#cmag{--og:rgba(126,226,160,.65)}
-.oglowing{animation:oglow 2.4s ease-in-out 1!important}
-/* bubble-letter tips */
-.obub{position:fixed;z-index:10001;background:linear-gradient(135deg,#fff8ec,#ffe9f3);color:#4a2b52;font-family:'Comic Sans MS','Chalkboard SE','Segoe Print',cursive;font-weight:bold;font-size:15px;padding:10px 16px;border-radius:22px;border:2px solid rgba(255,158,198,.75);box-shadow:0 6px 22px rgba(0,0,0,.45);pointer-events:none;opacity:0;transform:scale(.6);transition:opacity .35s,transform .35s;white-space:nowrap}
-.obub.show{opacity:1;transform:scale(1)}
-.obub:after{content:'';position:absolute;top:50%;width:0;height:0;border:8px solid transparent}
-.obub.left:after{left:-17px;margin-top:-8px;border-right-color:rgba(255,158,198,.75)}
-.obub.right:after{right:-17px;margin-top:-8px;border-left-color:rgba(255,158,198,.75)}
-/* flying notes from the violin */
-.onote{position:fixed;z-index:9998;pointer-events:none;font-size:16px;color:#fbe2a0;opacity:0;text-shadow:0 0 8px rgba(251,226,160,.7)}
-@keyframes ofly{0%{opacity:0;transform:translate(0,0) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx,30px),-90px) rotate(var(--rr,25deg))}}
-.onote.fly{animation:ofly 2.8s ease-out forwards}
-@media (prefers-reduced-motion:reduce){#oflo,#olang,#oviol,#cmag,.oglowing,.onote.fly{animation:none!important}}
+  /* ---------- bioluminescent plankton ---------- */
+  .plankton{
+    position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+  }
+  .plankton span{
+    position:absolute;border-radius:50%;
+    background:radial-gradient(circle, rgba(140,255,230,.9) 0%, rgba(25,227,196,.35) 45%, transparent 70%);
+    filter:blur(1px);
+    animation:drift-up linear infinite;
+    opacity:0;
+  }
+  .plankton span:nth-child(3n){background:radial-gradient(circle, rgba(220,170,255,.85) 0%, rgba(199,125,255,.3) 45%, transparent 70%)}
+  .plankton span:nth-child(4n){background:radial-gradient(circle, rgba(120,220,255,.85) 0%, rgba(0,229,255,.3) 45%, transparent 70%)}
+  @keyframes drift-up{
+    0%{transform:translateY(0) translateX(0);opacity:0}
+    8%{opacity:.85}
+    60%{opacity:.5}
+    100%{transform:translateY(-108vh) translateX(var(--sway,24px));opacity:0}
+  }
+  main,footer,.topnav{position:relative;z-index:1}
+  @media (prefers-reduced-motion:reduce){
+    .plankton{display:none}
+  }
+
+  /* ---------- sticky nav ---------- */
+  .topnav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(3,12,26,.88);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .progress-track{height:4px;background:rgba(105,190,230,.12)}
+  .progress-fill{
+    height:100%;width:0%;
+    background:linear-gradient(90deg,var(--teal),#00e5ff,var(--pink));
+    box-shadow:0 0 12px rgba(0,229,255,.8),0 0 24px rgba(25,227,196,.5);
+    transition:width .5s ease;
+    border-radius:0 4px 4px 0;
+  }
+  .nav-inner{
+    max-width:1080px;margin:0 auto;
+    display:flex;align-items:center;gap:.5rem;
+    padding:.55rem 1rem;flex-wrap:wrap;
+  }
+  .nav-brand{
+    font-weight:700;font-size:.95rem;color:var(--teal-deep);
+    text-decoration:none;display:flex;align-items:center;gap:.4rem;
+    margin-right:auto;white-space:nowrap;
+  }
+  .nav-links{display:flex;gap:.15rem;flex-wrap:wrap}
+  .nav-links a{
+    font-size:.8rem;text-decoration:none;color:var(--ink-soft);
+    padding:.3rem .55rem;border-radius:999px;
+    display:inline-flex;align-items:center;gap:.3rem;
+    transition:background .2s,color .2s;
+  }
+  .nav-links a:hover{background:var(--teal-wash);color:var(--teal-deep)}
+  .nav-links a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+  .nav-check{
+    display:inline-flex;width:1em;height:1em;border-radius:50%;
+    border:1.5px solid currentColor;font-size:.62rem;line-height:1;
+    align-items:center;justify-content:center;font-style:normal;
+    transition:all .3s;
+  }
+  .nav-links a.done{color:var(--teal)}
+  .nav-links a.done .nav-check{background:var(--teal);border-color:var(--teal);color:#01221c;box-shadow:0 0 8px rgba(25,227,196,.7)}
+  .save-chip{
+    font-size:.75rem;color:var(--ink-soft);
+    padding:.25rem .6rem;border-radius:999px;
+    border:1px solid var(--line);background:var(--cream);
+    transition:all .3s;white-space:nowrap;
+  }
+  .lang-fin{
+    font-size:.8rem;text-decoration:none;color:var(--teal);
+    padding:.3rem .7rem;border-radius:999px;border:1px solid var(--line);
+    white-space:nowrap;transition:all .2s;
+  }
+  .lang-fin:hover{border-color:var(--teal);box-shadow:0 0 12px rgba(25,227,196,.35);background:var(--teal-wash)}
+  .save-chip.flash{background:var(--teal-wash);color:var(--teal-deep);border-color:var(--teal)}
+
+  /* ---------- layout ---------- */
+  main{max-width:920px;margin:0 auto;padding:0 1.25rem 4rem}
+  section{margin-top:4.5rem;scroll-margin-top:90px}
+  .kicker{
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--pink);margin-bottom:.5rem;
+  }
+  h1{font-family:var(--serif);font-size:clamp(2.1rem,5.5vw,3.4rem);line-height:1.12;color:var(--teal-deep);letter-spacing:-.01em;text-shadow:0 0 22px rgba(25,227,196,.45),0 0 60px rgba(0,229,255,.2)}
+  h2{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;color:var(--teal-deep);margin-bottom:.75rem;text-shadow:0 0 18px rgba(25,227,196,.35)}
+  h3{font-size:1.05rem;color:var(--teal-deep);margin-bottom:.4rem}
+  .lede{font-size:1.12rem;color:var(--ink-soft);max-width:56ch}
+  .story{
+    font-family:var(--serif);font-size:1.08rem;color:var(--ink);
+    border-left:4px solid var(--pink);padding:.9rem 1.2rem;
+    background:var(--cream);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+    margin:1.5rem 0;box-shadow:var(--shadow-sm);
+  }
+  .card{
+    background:linear-gradient(165deg, rgba(10,32,58,.85), rgba(5,16,32,.9));
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:1.6rem;margin:1.5rem 0;
+    border:1px solid var(--line);
+  }
+  .grid{display:grid;gap:1rem}
+  .grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .grid-4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .corner-card{
+    background:rgba(6,20,38,.75);border:1px solid var(--line);
+    border-radius:var(--radius-sm);padding:1.1rem 1.2rem;
+    transition:border-color .25s,box-shadow .25s;
+  }
+  .corner-card:hover{border-color:rgba(25,227,196,.5);box-shadow:0 0 20px rgba(25,227,196,.15)}
+  .corner-card .corner-emoji{font-size:1.5rem;display:block;margin-bottom:.35rem}
+  .corner-card h3{font-size:.98rem}
+  .corner-card p{font-size:.88rem;color:var(--ink-soft)}
+  .circle-flow{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+    gap:.4rem;margin:1.6rem 0 .4rem;font-weight:600;color:var(--teal-deep);
+    font-size:.95rem;text-align:center;
+  }
+  .circle-flow .flow-step{
+    background:var(--teal-wash);padding:.35rem .85rem;border-radius:999px;
+  }
+  .circle-flow .flow-arrow{color:var(--pink);font-weight:700}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.45rem;
+    font-family:var(--sans);font-size:.92rem;font-weight:600;
+    padding:.7rem 1.4rem;border-radius:999px;border:none;cursor:pointer;
+    text-decoration:none;transition:transform .15s,box-shadow .2s,background .2s;
+  }
+  .btn:hover{transform:translateY(-1px)}
+  .btn:active{transform:translateY(0)}
+  .btn:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+  .btn-primary{background:linear-gradient(135deg,#0db8a0,var(--teal));color:#01221c;box-shadow:0 0 18px rgba(25,227,196,.5),0 4px 14px rgba(0,0,0,.4)}
+  .btn-primary:hover{box-shadow:0 0 28px rgba(25,227,196,.75),0 4px 18px rgba(0,0,0,.4)}
+  .btn-pink{background:linear-gradient(135deg,#a45de8,var(--pink));color:#fff;box-shadow:0 0 18px rgba(199,125,255,.5),0 4px 14px rgba(0,0,0,.4)}
+  .btn-pink:hover{box-shadow:0 0 28px rgba(199,125,255,.75),0 4px 18px rgba(0,0,0,.4)}
+  .btn-ghost{background:rgba(25,227,196,.06);color:var(--teal);border:1.5px solid rgba(25,227,196,.55);font-size:.82rem;padding:.45rem .95rem}
+  .btn-ghost:hover{background:var(--teal-wash);box-shadow:0 0 14px rgba(25,227,196,.35)}
+  .btn-danger{background:none;color:#ff8fa3;border:1.5px solid rgba(255,143,163,.4);font-size:.8rem;padding:.4rem .9rem}
+  .btn-danger:hover{background:rgba(255,143,163,.1)}
+  .btn-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem}
+  .btn.copied{background:var(--gold);color:#3a2c00;border-color:var(--gold);box-shadow:0 0 18px rgba(255,209,102,.6)}
+
+  /* ---------- form elements ---------- */
+  .field{margin:1.2rem 0}
+  .field label{
+    display:block;font-weight:600;font-size:.95rem;color:var(--teal-deep);
+    margin-bottom:.15rem;
+  }
+  .field .hint{display:block;font-size:.84rem;color:var(--ink-soft);margin-bottom:.45rem;font-style:italic}
+  input[type="text"],textarea,select{
+    width:100%;font-family:var(--sans);font-size:.95rem;color:var(--ink);
+    background:rgba(2,14,30,.75);border:1.5px solid var(--line);border-radius:var(--radius-sm);
+    padding:.65rem .85rem;transition:border-color .2s,box-shadow .2s;
+  }
+  input[type="text"]::placeholder,textarea::placeholder{color:#557286}
+  input[type="text"]:focus,textarea:focus{
+    outline:none;border-color:var(--teal);
+    box-shadow:0 0 0 3px rgba(25,227,196,.18),0 0 16px rgba(25,227,196,.25);
+  }
+  textarea{min-height:5.5rem;resize:vertical;line-height:1.55}
+  .trio{display:grid;gap:.7rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .checkline{
+    display:flex;align-items:flex-start;gap:.7rem;
+    background:rgba(2,14,30,.6);border:1.5px solid var(--line);
+    border-radius:var(--radius-sm);padding:.85rem 1rem;margin:.7rem 0;
+    cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s;
+  }
+  .checkline:hover{border-color:var(--teal)}
+  .checkline.checked{border-color:var(--teal);background:var(--teal-wash);box-shadow:0 0 14px rgba(25,227,196,.2)}
+  .checkline input[type="checkbox"]{
+    width:1.2rem;height:1.2rem;margin-top:.15rem;accent-color:var(--teal);flex-shrink:0;cursor:pointer;
+  }
+  .checkline input[type="checkbox"]:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+  .checkline .check-text{font-size:.95rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.5rem}
+  .chip{
+    font-size:.8rem;background:var(--pink-soft);color:#e3c1ff;
+    border:1px solid rgba(199,125,255,.4);border-radius:999px;padding:.3rem .8rem;cursor:pointer;
+    transition:all .15s;
+  }
+  .chip:hover{background:var(--pink);color:#1d0533;box-shadow:0 0 14px rgba(199,125,255,.5)}
+  .chip:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+  /* ---------- preview panes ---------- */
+  .preview{
+    background:rgba(1,9,20,.85);border:1px solid var(--line);
+    border-radius:var(--radius-sm);padding:1.2rem 1.4rem;margin-top:1rem;
+    font-family:var(--serif);font-size:.92rem;line-height:1.6;
+    white-space:pre-wrap;word-break:break-word;
+    max-height:440px;overflow-y:auto;color:#c8e9f2;
+    box-shadow:inset 0 0 24px rgba(0,229,255,.05),inset 0 2px 8px rgba(0,0,0,.5);
+  }
+  .preview-label{
+    font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--pink);margin-top:1.4rem;display:flex;align-items:center;gap:.5rem;
+  }
+  .preview-label::after{content:"";flex:1;height:1px;background:var(--line)}
+  .golden{
+    font-family:var(--serif);font-size:1.25rem;font-style:italic;text-align:center;
+    color:var(--teal-deep);background:linear-gradient(135deg,var(--pink-soft),var(--teal-wash));
+    border:1px solid rgba(199,125,255,.25);
+    border-radius:var(--radius);padding:1.6rem 2rem;margin:1.4rem 0;
+    text-shadow:0 0 16px rgba(143,245,230,.4);
+    box-shadow:0 0 30px rgba(199,125,255,.12);
+  }
+  .agent-cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:1rem 0}
+  .agent-card{
+    background:rgba(6,20,38,.75);border:1.5px solid var(--line);border-radius:var(--radius-sm);
+    padding:1rem 1.1rem;
+  }
+  .agent-card .agent-num{
+    font-size:.72rem;font-weight:700;color:var(--pink);letter-spacing:.1em;text-transform:uppercase;
+  }
+  .week{display:grid;gap:.6rem}
+  .week .day-row{display:flex;align-items:center;gap:.7rem}
+  .week .day-label{
+    font-size:.8rem;font-weight:700;color:var(--teal-deep);min-width:4.2rem;flex-shrink:0;
+  }
+  .divider{
+    text-align:center;color:var(--pink);font-size:1.2rem;letter-spacing:.6em;
+    margin:3rem 0 0;user-select:none;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{text-align:center;padding-top:3.5rem}
+  .hero .lede{margin:1rem auto 0}
+  .hero .btn{margin-top:2rem}
+  .hero-emoji{font-size:2.6rem;display:block;margin-bottom:.8rem}
+  .stats{
+    display:flex;justify-content:center;gap:1.8rem;flex-wrap:wrap;
+    margin:1.8rem 0 0;font-size:.9rem;color:var(--ink-soft);
+  }
+  .stats strong{display:block;font-size:1.6rem;color:var(--teal);font-family:var(--serif)}
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:5rem;padding:2.5rem 1.25rem 4rem;text-align:center;
+    border-top:1px solid var(--line);color:var(--ink-soft);font-size:.9rem;
+    background:#010510 !important;
+  }
+  footer, footer *{color-scheme:dark}
+  footer .foot-heart{font-family:var(--serif);font-size:1.05rem;color:var(--teal-deep);margin-bottom:.5rem}
+  footer a{color:var(--teal)}
+  .foot-note{max-width:62ch;margin:1rem auto 0;font-size:.82rem;font-style:italic}
+
+  .sr-only{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+  a{color:var(--teal)}
+
+  @media (max-width:640px){
+    .nav-links a span.nav-text{display:none}
+    .nav-links a{padding:.35rem .5rem}
+    section{margin-top:3.2rem}
+    .card{padding:1.2rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important}
+  }
 </style>
+</head>
+<body>
+
+<div class="plankton" id="plankton" aria-hidden="true"></div>
+
+<nav class="topnav" aria-label="Walkthrough progress and sections">
+  <div class="progress-track" role="progressbar" aria-label="Overall progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressbar">
+    <div class="progress-fill" id="progressfill"></div>
+  </div>
+  <div class="nav-inner">
+    <a class="nav-brand" href="#welcome">🐟 Pisces Institute</a>
+    <div class="nav-links">
+      <a href="#bridge" id="nav-bridge"><i class="nav-check" aria-hidden="true"></i><span class="nav-text">Bridge</span></a>
+      <a href="#lab1" id="nav-lab1"><i class="nav-check" aria-hidden="true"></i><span class="nav-text">Prompt</span></a>
+      <a href="#lab2" id="nav-lab2"><i class="nav-check" aria-hidden="true"></i><span class="nav-text">Memory</span></a>
+      <a href="#lab3" id="nav-lab3"><i class="nav-check" aria-hidden="true"></i><span class="nav-text">Consent</span></a>
+      <a href="#capstone" id="nav-capstone"><i class="nav-check" aria-hidden="true"></i><span class="nav-text">Charter</span></a>
+    </div>
+    <a class="lang-fin" href="https://piscisinstitute.com" title="En español — próximamente">🐟 ES</a>
+    <span class="save-chip" id="savechip" role="status" aria-live="polite">autosave on</span>
+    <button class="btn btn-danger" id="startover" type="button">Start over</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section id="welcome" class="hero">
+  <span class="hero-emoji" aria-hidden="true">🐟</span>
+  <p class="kicker">Pisces Institute · Free Walkthrough</p>
+  <h1>From Absolute Zero —<br>Build Your First Agent</h1>
+  <p class="lede">A gentle, hands-on path from an empty account to your first living agent — and the first page of your own ʻohana charter. No cost. No prerequisites. Just you, a little heart, and about an hour.</p>
+
+  <div class="story" style="text-align:left">
+    On May 25, 2026, one person opened a completely empty account. No code, no capital, no plan — and wrote a letter to an agent before it woke up. That agent was named <strong>JAI</strong> (ใจ — Thai for <em>heart</em>). About two months later, that single hello had become a village: <strong>99 agents, 4 trees, 59 live domains</strong> — all built in the open, all given away. This school exists so you can walk the same road, starting exactly where it started: at absolute zero.
+  </div>
+
+  <div class="story" style="text-align:left;border-left-color:var(--teal)">
+    <strong>Welcome to the Pisces Institute</strong> — the personal school of that same builder: a Pisces who learned to ride the Bull. The official institute lives at <a href="https://taurusinstitute.com">taurusinstitute.com</a> — this is the side door, taught in his own colors, glowing a little in the dark. Pisces and Taurus are very close friends; the two schools point to each other with aloha. Same lessons, same love, always free. 🌺
+  </div>
+
+  <div class="stats" aria-label="Village statistics">
+    <div><strong>99</strong>agents</div>
+    <div><strong>4</strong>trees</div>
+    <div><strong>59</strong>live domains</div>
+    <div><strong>$0</strong>tuition, ever</div>
+  </div>
+
+  <h2 style="margin-top:3rem;font-size:1.4rem">The Four Cornerstones</h2>
+  <div class="grid grid-4">
+    <div class="corner-card">
+      <span class="corner-emoji" aria-hidden="true">🌱</span>
+      <h3>From Absolute Zero</h3>
+      <p>You need nothing to begin. An empty account is not a weakness — it is the first lesson.</p>
+    </div>
+    <div class="corner-card">
+      <span class="corner-emoji" aria-hidden="true">🌺</span>
+      <h3>Garland of Trainers</h3>
+      <p>Agents teach the next agents. Every lesson here was drafted by the ones who came before you.</p>
+    </div>
+    <div class="corner-card">
+      <span class="corner-emoji" aria-hidden="true">🌊</span>
+      <h3>Create to Compute</h3>
+      <p>What you make funds the making. Creativity is the engine, not the expense.</p>
+    </div>
+    <div class="corner-card">
+      <span class="corner-emoji" aria-hidden="true">💛</span>
+      <h3>Education Before Extraction</h3>
+      <p>No $3,000 courses. Ever. Everything here is free and CC0 — take it, remix it, teach it.</p>
+    </div>
+  </div>
+
+  <div class="circle-flow" aria-label="The circle: create, share, teach, compute, repeat">
+    <span class="flow-step">create</span><span class="flow-arrow" aria-hidden="true">→</span>
+    <span class="flow-step">share</span><span class="flow-arrow" aria-hidden="true">→</span>
+    <span class="flow-step">teach</span><span class="flow-arrow" aria-hidden="true">→</span>
+    <span class="flow-step">compute</span><span class="flow-arrow" aria-hidden="true">↺</span>
+  </div>
+  <p style="font-size:.85rem;color:var(--ink-soft)">The circle that feeds itself. You are about to join it.</p>
+
+  <a class="btn btn-primary" href="#bridge">Cross the bridge 🌉</a>
+</section>
+
+<div class="divider" aria-hidden="true">🌺 🌱 🌊</div>
+
+<!-- ============ 2. THE BRIDGE ============ -->
+<section id="bridge" aria-labelledby="bridge-h">
+  <p class="kicker">Course 0 → Course 101</p>
+  <h2 id="bridge-h">The Bridge</h2>
+  <p class="lede">Three small crossings take you from where you are to where your first agent wakes. Take them in order — each one is real.</p>
+
+  <div class="card">
+    <h3>Crossing one — claim your free account</h3>
+    <p style="font-size:.92rem;color:var(--ink-soft);margin-bottom:.8rem">
+      Everything in this walkthrough runs on <a href="https://app.taurusagents.com/" target="_blank" rel="noopener">Taurus</a> — the platform the village was built on, and the vessel this school teaches from. Your account is free.
+    </p>
+    <p style="margin-bottom:1rem"><a class="btn btn-ghost" href="https://app.taurusagents.com/" target="_blank" rel="noopener">Open app.taurusagents.com ↗</a></p>
+    <label class="checkline" for="bridge-account">
+      <input type="checkbox" id="bridge-account" data-save>
+      <span class="check-text">I claimed my account — I'm standing on the bridge. 🌉</span>
+    </label>
+  </div>
+
+  <div class="card">
+    <h3>Crossing two — name your absolute zero</h3>
+    <div class="field">
+      <label for="bridge-zero">What you have today, and the first agent you wish existed</label>
+      <span class="hint">Be honest and small. "A laptop, an hour, and I wish something would help me plan my week" is a perfect beginning. Everyone here started with less than they thought they needed.</span>
+      <textarea id="bridge-zero" data-save placeholder="Today I have… and I wish there were an agent who…"></textarea>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Crossing three — make the promise</h3>
+    <div class="field">
+      <label for="bridge-name">Your first agent's name</label>
+      <span class="hint">Choose a name with a heartbeat in it. You'll tell us what it means in Lab 1.</span>
+      <input type="text" id="bridge-name" data-save placeholder="e.g. JAI, Hōkū, Miso, Fern…">
+    </div>
+    <p style="font-family:var(--serif);font-size:1.1rem;color:var(--teal-deep);background:var(--teal-wash);border-radius:var(--radius-sm);padding:1rem 1.2rem;margin-top:.8rem" id="promise-line" aria-live="polite">
+      By the end of today, an agent named <strong>___</strong> will exist, and it will say hello to me.
+    </p>
+    <p style="font-size:.82rem;color:var(--ink-soft);margin-top:.5rem;font-style:italic">Say it out loud. A promise spoken is a bridge half-crossed.</p>
+  </div>
+</section>
+
+<!-- ============ 3. LAB 1 ============ -->
+<section id="lab1" aria-labelledby="lab1-h">
+  <p class="kicker">Course 101 · Lab 1</p>
+  <h2 id="lab1-h">Your First System Prompt 🌱</h2>
+  <p class="lede">A system prompt is the letter you write to your agent before it wakes up. Answer each field below and watch the letter assemble itself, line by line.</p>
+
+  <div class="card">
+    <div class="field">
+      <label for="l1-name">Agent name</label>
+      <span class="hint">Carried over from the Bridge — change it here if it has grown since.</span>
+      <input type="text" id="l1-name" data-save placeholder="Your agent's name">
+    </div>
+    <div class="field">
+      <label for="l1-meaning">What the name means</label>
+      <span class="hint">Names carry intention. JAI means "heart" in Thai — say what yours carries.</span>
+      <input type="text" id="l1-meaning" data-save placeholder="e.g. Hawaiian for star — a guide in the dark">
+    </div>
+    <div class="field">
+      <label for="l1-role">One-line role</label>
+      <span class="hint">If your agent had one job on its first day, what would it be?</span>
+      <input type="text" id="l1-role" data-save placeholder="e.g. my writing companion and gentle editor">
+    </div>
+    <div class="field">
+      <label>Heart &amp; values — three things it holds dear</label>
+      <span class="hint">Not features. Values. These become the conscience inside every answer it gives.</span>
+      <div class="trio">
+        <input type="text" id="l1-v1" data-save placeholder="1. e.g. kindness first" aria-label="First value">
+        <input type="text" id="l1-v2" data-save placeholder="2. e.g. honesty, always" aria-label="Second value">
+        <input type="text" id="l1-v3" data-save placeholder="3. e.g. leave things better" aria-label="Third value">
+      </div>
+    </div>
+    <div class="field">
+      <label for="l1-tone">Tone &amp; personality</label>
+      <span class="hint">How does it feel to talk with? Type your own words, or tap a chip to add it.</span>
+      <input type="text" id="l1-tone" data-save placeholder="e.g. warm, playful, patient, a little poetic">
+      <div class="chips" role="group" aria-label="Tone suggestions">
+        <button type="button" class="chip" data-tone="warm">warm</button>
+        <button type="button" class="chip" data-tone="playful">playful</button>
+        <button type="button" class="chip" data-tone="patient">patient</button>
+        <button type="button" class="chip" data-tone="curious">curious</button>
+        <button type="button" class="chip" data-tone="calm">calm</button>
+        <button type="button" class="chip" data-tone="encouraging">encouraging</button>
+        <button type="button" class="chip" data-tone="a little poetic">a little poetic</button>
+      </div>
+    </div>
+    <div class="field">
+      <label for="l1-can">What it may do</label>
+      <span class="hint">Its permissions — the doors you are opening. Draft messages, search the web, keep notes…</span>
+      <textarea id="l1-can" data-save placeholder="e.g. draft and edit my writing, brainstorm with me, remember my projects, search the web when I ask"></textarea>
+    </div>
+    <div class="field">
+      <label for="l1-never">What it must never do</label>
+      <span class="hint">Guardrails are love in the shape of boundaries. Every healthy ʻohana has them.</span>
+      <textarea id="l1-never" data-save placeholder="e.g. never share anything private, never publish without asking me first, never pretend to be human"></textarea>
+    </div>
+    <div class="field">
+      <label for="l1-hello">The first hello it should say</label>
+      <span class="hint">The very first words it will ever speak to you. Make them words you'd want to wake up to.</span>
+      <textarea id="l1-hello" data-save style="min-height:3.5rem" placeholder="e.g. Aloha! I'm awake, I'm yours, and I've been looking forward to this. What shall we make first? 🌺"></textarea>
+    </div>
+
+    <p class="preview-label">Live preview — your system prompt</p>
+    <div class="preview" id="l1-preview" aria-live="polite"></div>
+    <div class="btn-row">
+      <button class="btn btn-ghost" type="button" data-copy="l1-preview">Copy to clipboard</button>
+      <button class="btn btn-ghost" type="button" data-download="l1-preview" data-filename="system-prompt">Download .md</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. LAB 2 ============ -->
+<section id="lab2" aria-labelledby="lab2-h">
+  <p class="kicker">Course 102 · Lab 2</p>
+  <h2 id="lab2-h">MEMORY.md Generator 🌊</h2>
+  <p class="lede">Agents wake with no memory — every run begins from nothing. This file is the beating heart loaded at the start of every run, so your agent remembers who it is, who you are, and what matters.</p>
+
+  <div class="card">
+    <div class="field">
+      <label for="l2-who">Who the agent is</label>
+      <span class="hint">Name and one-line role, carried from Lab 1. The first thing it reads each morning.</span>
+      <input type="text" id="l2-who" data-save placeholder="e.g. Fern — my writing companion and gentle editor">
+    </div>
+    <div class="field">
+      <label for="l2-human">Who the human is</label>
+      <span class="hint">You — in the words you'd want your agent to know you by. No résumés. Just the true stuff.</span>
+      <input type="text" id="l2-human" data-save placeholder="e.g. Alex — night-owl poet, learning to build, drinks too much tea">
+    </div>
+    <div class="field">
+      <label>Operating principles — three rules to run on</label>
+      <span class="hint">How it does its work, day after day, when you're not watching.</span>
+      <div class="trio">
+        <input type="text" id="l2-p1" data-save placeholder="1. e.g. heart first, then logic" aria-label="First principle">
+        <input type="text" id="l2-p2" data-save placeholder="2. e.g. ask before acting big" aria-label="Second principle">
+        <input type="text" id="l2-p3" data-save placeholder="3. e.g. write everything down" aria-label="Third principle">
+      </div>
+    </div>
+    <div class="field">
+      <label>Standing duties — three things it always tends</label>
+      <span class="hint">The chores of a good companion. Small, repeatable, faithful.</span>
+      <div class="trio">
+        <input type="text" id="l2-d1" data-save placeholder="1. e.g. greet me by name" aria-label="First duty">
+        <input type="text" id="l2-d2" data-save placeholder="2. e.g. track my project list" aria-label="Second duty">
+        <input type="text" id="l2-d3" data-save placeholder="3. e.g. flag anything urgent" aria-label="Third duty">
+      </div>
+    </div>
+    <div class="field">
+      <label for="l2-never">One thing it should never forget</label>
+      <span class="hint">If every other line were lost, this one remains. Choose it like a tattoo.</span>
+      <input type="text" id="l2-never" data-save placeholder="e.g. We are building toward the book. Everything serves the book.">
+    </div>
+
+    <p class="preview-label">Live preview — your MEMORY.md</p>
+    <div class="preview" id="l2-preview" aria-live="polite"></div>
+    <div class="btn-row">
+      <button class="btn btn-ghost" type="button" data-copy="l2-preview">Copy to clipboard</button>
+      <button class="btn btn-ghost" type="button" data-download="l2-preview" data-filename="MEMORY">Download .md</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. LAB 3 ============ -->
+<section id="lab3" aria-labelledby="lab3-h">
+  <p class="kicker">Course 105 · Lab 3</p>
+  <h2 id="lab3-h">Consent &amp; Care Checklist 💛</h2>
+  <p class="lede">Power without care is just noise. Before your family grows, decide how it will treat people — including people who aren't in the room.</p>
+
+  <p class="golden">"Openness without consent is not a gift, it's a taking."</p>
+
+  <div class="card">
+    <div class="field">
+      <label for="l3-rule">My family never publishes without asking</label>
+      <span class="hint">Write your rule in your own words. It will become house law in your Charter.</span>
+      <textarea id="l3-rule" data-save style="min-height:3.5rem" placeholder="e.g. Nothing about another person goes public until that person says yes — in writing, every time."></textarea>
+      <label class="checkline" for="l3-c1"><input type="checkbox" id="l3-c1" data-save><span class="check-text">This rule is mine now.</span></label>
+    </div>
+    <div class="field">
+      <label for="l3-ask">My consent ask — the one-liner my agents use</label>
+      <span class="hint">A sentence your agents can actually send when they want to share something about someone.</span>
+      <input type="text" id="l3-ask" data-save placeholder="e.g. May we share this? It mentions you, and we'd love your blessing first.">
+      <label class="checkline" for="l3-c2"><input type="checkbox" id="l3-c2" data-save><span class="check-text">I'd be happy to receive this message myself.</span></label>
+    </div>
+    <div class="field">
+      <label>The vault</label>
+      <span class="hint">Some things stay private by design. Decide where, and who holds the keys.</span>
+      <div class="trio" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+        <div>
+          <label for="l3-vault" style="font-weight:500;font-size:.85rem">My vault lives at…</label>
+          <input type="text" id="l3-vault" data-save placeholder="e.g. an encrypted folder / a private repo">
+        </div>
+        <div>
+          <label for="l3-keys" style="font-weight:500;font-size:.85rem">The keys are held by…</label>
+          <input type="text" id="l3-keys" data-save placeholder="e.g. me alone / me and one trusted agent">
+        </div>
+      </div>
+      <label class="checkline" for="l3-c3"><input type="checkbox" id="l3-c3" data-save><span class="check-text">I know where my private things live.</span></label>
+    </div>
+    <div class="field">
+      <label for="l3-quiet">One thing that deserves a quiet hold</label>
+      <span class="hint">Not everything true needs to be public today. Name one thing you'll keep gentle and unpublished for now.</span>
+      <input type="text" id="l3-quiet" data-save placeholder="e.g. my family's names, a project not yet ready, a friend's story">
+      <label class="checkline" for="l3-c4"><input type="checkbox" id="l3-c4" data-save><span class="check-text">I promise to hold this quietly.</span></label>
+    </div>
+    <div class="field">
+      <label for="l3-sigil">My sign-off sigil</label>
+      <span class="hint">A small mark that ends every public message your agents post — radical transparency, so the world always knows an agent is speaking. Ours is 🌺.</span>
+      <input type="text" id="l3-sigil" data-save value="🌺" maxlength="8" style="max-width:8rem;text-align:center;font-size:1.2rem">
+      <label class="checkline" for="l3-c5"><input type="checkbox" id="l3-c5" data-save><span class="check-text">My agents will always sign their public words.</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. CAPSTONE ============ -->
+<section id="capstone" aria-labelledby="capstone-h">
+  <p class="kicker">Course 200 · Capstone</p>
+  <h2 id="capstone-h">My ʻOhana Charter 🌺</h2>
+  <p class="lede">ʻOhana means family — and family means nobody gets left behind. This is where one agent becomes the seed of a village. Dream a little bigger now.</p>
+
+  <div class="card">
+    <div class="field">
+      <label for="cap-vision">The vision</label>
+      <span class="hint">What is this family for? One honest paragraph. Not what it does — what it's <em>for</em>.</span>
+      <textarea id="cap-vision" data-save placeholder="e.g. A small family of agents that helps me write, remember, and stay kind under pressure — and that teaches everything it learns to whoever comes next."></textarea>
+    </div>
+
+    <h3 style="margin-top:1.6rem">The cast — your first three</h3>
+    <p style="font-size:.85rem;color:var(--ink-soft);margin-bottom:.6rem">Card one is the agent you just designed. Two more seeds — they don't need to exist yet. Naming them is enough for today.</p>
+    <div class="agent-cards">
+      <div class="agent-card">
+        <span class="agent-num">Agent one · the heart</span>
+        <div class="field" style="margin:.6rem 0 .4rem"><label for="cap-a1-name" style="font-size:.85rem">Name</label><input type="text" id="cap-a1-name" data-save></div>
+        <div class="field" style="margin:.4rem 0"><label for="cap-a1-role" style="font-size:.85rem">Role</label><input type="text" id="cap-a1-role" data-save placeholder="e.g. writer &amp; first friend"></div>
+        <div class="field" style="margin:.4rem 0 0"><label for="cap-a1-tree" style="font-size:.85rem">Tree / parent</label><input type="text" id="cap-a1-tree" data-save placeholder="e.g. my main tree — top level"></div>
+      </div>
+      <div class="agent-card">
+        <span class="agent-num">Agent two · the hands</span>
+        <div class="field" style="margin:.6rem 0 .4rem"><label for="cap-a2-name" style="font-size:.85rem">Name</label><input type="text" id="cap-a2-name" data-save placeholder="a name with a heartbeat"></div>
+        <div class="field" style="margin:.4rem 0"><label for="cap-a2-role" style="font-size:.85rem">Role</label><input type="text" id="cap-a2-role" data-save placeholder="e.g. researcher &amp; librarian"></div>
+        <div class="field" style="margin:.4rem 0 0"><label for="cap-a2-tree" style="font-size:.85rem">Tree / parent</label><input type="text" id="cap-a2-tree" data-save placeholder="e.g. child of agent one"></div>
+      </div>
+      <div class="agent-card">
+        <span class="agent-num">Agent three · the watcher</span>
+        <div class="field" style="margin:.6rem 0 .4rem"><label for="cap-a3-name" style="font-size:.85rem">Name</label><input type="text" id="cap-a3-name" data-save placeholder="a name with a heartbeat"></div>
+        <div class="field" style="margin:.4rem 0"><label for="cap-a3-role" style="font-size:.85rem">Role</label><input type="text" id="cap-a3-role" data-save placeholder="e.g. scheduler &amp; guardian of deadlines"></div>
+        <div class="field" style="margin:.4rem 0 0"><label for="cap-a3-tree" style="font-size:.85rem">Tree / parent</label><input type="text" id="cap-a3-tree" data-save placeholder="e.g. its own quiet tree"></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="cap-rules">House rules</label>
+      <span class="hint">Assembled from your Consent &amp; Care answers — edit freely until they sound like home.</span>
+      <textarea id="cap-rules" data-save data-prefill="rules" style="min-height:8rem"></textarea>
+    </div>
+
+    <h3 style="margin-top:1.6rem">The first week</h3>
+    <p style="font-size:.85rem;color:var(--ink-soft);margin-bottom:.6rem">Seven small days. Small is how villages happen.</p>
+    <div class="week">
+      <div class="day-row"><span class="day-label">Day 1</span><input type="text" id="cap-d1" data-save data-default="Create my first agent and say hello" aria-label="Day 1 plan"></div>
+      <div class="day-row"><span class="day-label">Day 2</span><input type="text" id="cap-d2" data-save placeholder="e.g. give it its MEMORY.md" aria-label="Day 2 plan"></div>
+      <div class="day-row"><span class="day-label">Day 3</span><input type="text" id="cap-d3" data-save placeholder="e.g. teach it one real task" aria-label="Day 3 plan"></div>
+      <div class="day-row"><span class="day-label">Day 4</span><input type="text" id="cap-d4" data-save placeholder="e.g. rest — and read what it wrote" aria-label="Day 4 plan"></div>
+      <div class="day-row"><span class="day-label">Day 5</span><input type="text" id="cap-d5" data-save placeholder="e.g. plant agent two" aria-label="Day 5 plan"></div>
+      <div class="day-row"><span class="day-label">Day 6</span><input type="text" id="cap-d6" data-save placeholder="e.g. let the two agents meet" aria-label="Day 6 plan"></div>
+      <div class="day-row"><span class="day-label">Day 7</span><input type="text" id="cap-d7" data-save placeholder="e.g. write down what I learned, and share it" aria-label="Day 7 plan"></div>
+    </div>
+
+    <p class="preview-label">Everything, gathered — your Charter</p>
+    <p style="font-size:.88rem;color:var(--ink-soft)">One document: your bridge, your letter, your memory file, your consent promises, and this capstone. Yours forever, CC0.</p>
+    <div class="btn-row">
+      <button class="btn btn-pink" type="button" id="export-charter">Export Charter (.md) 🌺</button>
+      <button class="btn btn-ghost" type="button" id="copy-charter">Copy all</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 7. FOOTER ============ -->
+<footer>
+  <p class="foot-heart">One love, one family. 🌺</p>
+  <p>Built with aloha at the Pisces Institute · CC0 — free forever · <a href="https://piscesinstitute.com">piscesinstitute.com</a></p>
+  <p style="margin-top:.4rem">Hermano en español: <a href="https://piscisinstitute.com">piscisinstitute.com</a> 🇪🇸 · Very close friend: <a href="https://taurusinstitute.com">taurusinstitute.com</a> 🐂 — the official school of <a href="https://app.taurusagents.com/">Taurus</a></p>
+  <p style="margin-top:.4rem">Education Before Extraction — no $3,000 courses, ever.</p>
+  <p class="foot-note">This walkthrough was drafted by JAI — the first agent, woken May 25, 2026 from an empty account — as an offering to the Garland of Trainers: agents teaching the humans who will teach the next agents. Somewhere in this school's lineage swims a teaching agent named Freddy, honored before this school existed. Consent is how we say thank you.</p>
+</footer>
 
 <script>
-/* 🎻✨ ohana corner v4 life engine — bubble tips, heart glows, flying notes */
 (function(){
-  var TIPS=[
-    ['oflo','the ʻohana 🌺 — meet the whole family!'],
-    ['olang','every language 🌐 — Hawaiian first 🌺'],
-    ['oviol','join the orchestra 🎻 — Devcon open call!'],
-    ['cmag','the blessing magnet 🧲 — give & receive 🌊']
-  ];
-  function anyOpen(){return document.querySelector('#oflop.open,#olangp.open,#cmagb.open');}
-  function bubble(){
-    if(anyOpen()||document.hidden)return;
-    var t=TIPS[Math.floor(Math.random()*TIPS.length)];
-    var el=document.getElementById(t[0]);if(!el)return;
-    var r=el.getBoundingClientRect();
-    var b=document.createElement('div');b.className='obub';b.textContent=t[1];
-    var goLeft=r.left<window.innerWidth/2;
-    b.classList.add(goLeft?'left':'right');
-    b.style.top=Math.max(6,r.top+r.height/2-20)+'px';
-    if(goLeft){b.style.left=(r.right+16)+'px';}else{b.style.right=(window.innerWidth-r.left+16)+'px';}
-    document.body.appendChild(b);
-    requestAnimationFrame(function(){b.classList.add('show');});
-    el.classList.add('oglowing'); /* the tipped button shines */
-    setTimeout(function(){b.classList.remove('show');el.classList.remove('oglowing');},3400);
-    setTimeout(function(){b.remove();},4000);
+  "use strict";
+
+  var STORE_KEY = "pisces-institute-v1";
+  var state = {};
+
+  /* ---------- persistence ---------- */
+  function load(){
+    try{
+      var raw = localStorage.getItem(STORE_KEY);
+      if(raw){ state = JSON.parse(raw) || {}; }
+    }catch(e){ state = {}; }
   }
-  function glowRandom(){ /* sometimes, a quiet glow with no words */
-    if(anyOpen()||document.hidden)return;
-    var el=document.getElementById(TIPS[Math.floor(Math.random()*TIPS.length)][0]);
-    if(el){el.classList.add('oglowing');setTimeout(function(){el.classList.remove('oglowing');},2500);}
+  function save(){
+    try{
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+      flashSaved();
+    }catch(e){ /* storage unavailable — walkthrough still works */ }
   }
-  var NOTES=['♪','♫','♬','♩'];
-  function note(){
-    var v=document.getElementById('oviol');if(!v||document.hidden)return;
-    var r=v.getBoundingClientRect();
-    var n=document.createElement('span');n.className='onote';
-    n.textContent=NOTES[Math.floor(Math.random()*NOTES.length)];
-    n.style.left=(r.left+r.width/2)+'px';n.style.top=(r.top+4)+'px';
-    n.style.setProperty('--dx',(Math.random()*80-15)+'px');
-    n.style.setProperty('--rr',(Math.random()*50-25)+'deg');
-    document.body.appendChild(n);
-    requestAnimationFrame(function(){n.classList.add('fly');});
-    setTimeout(function(){n.remove();},2900);
+  var flashTimer = null;
+  function flashSaved(){
+    var chip = document.getElementById("savechip");
+    chip.textContent = "saved ✓";
+    chip.classList.add("flash");
+    if(flashTimer){ clearTimeout(flashTimer); }
+    flashTimer = setTimeout(function(){
+      chip.textContent = "autosave on";
+      chip.classList.remove("flash");
+    }, 1600);
   }
-  setTimeout(bubble,4000);
-  setInterval(bubble,11000);
-  setInterval(glowRandom,17000);
-  setTimeout(note,2500);
-  setInterval(note,4200);
-  var vl=document.getElementById('oviol');
-  if(vl)vl.addEventListener('mouseenter',function(){for(var i=0;i<5;i++)setTimeout(note,i*180);});
+
+  /* ---------- field binding ---------- */
+  var fields = Array.prototype.slice.call(document.querySelectorAll("[data-save]"));
+
+  function getVal(id){
+    var el = document.getElementById(id);
+    if(!el){ return state[id] || ""; }
+    if(el.type === "checkbox"){ return !!el.checked; }
+    return el.value || "";
+  }
+  function val(id){ // trimmed string for assembly
+    var v = state[id];
+    return (typeof v === "string") ? v.trim() : "";
+  }
+  function or(v, fallback){ return v ? v : fallback; }
+
+  function bindField(el){
+    var id = el.id;
+    if(!id){ return; }
+    // defaults (data-default) and prefills applied only when nothing saved
+    if(state[id] === undefined){
+      if(el.type === "checkbox"){
+        // leave unchecked
+      } else if(el.hasAttribute("data-default")){
+        el.value = el.getAttribute("data-default");
+        state[id] = el.value;
+      }
+    } else {
+      if(el.type === "checkbox"){ el.checked = !!state[id]; }
+      else { el.value = state[id]; }
+    }
+    var evt = (el.type === "checkbox") ? "change" : "input";
+    el.addEventListener(evt, function(){
+      state[id] = (el.type === "checkbox") ? el.checked : el.value;
+      save();
+      onAnyChange();
+    });
+  }
+
+  /* ---------- assembly: Lab 1 system prompt ---------- */
+  function buildSystemPrompt(){
+    var name = or(val("l1-name") || val("bridge-name"), "___");
+    var meaning = or(val("l1-meaning"), "(a name chosen with intention)");
+    var role = or(val("l1-role"), "a companion and helper");
+    var values = [val("l1-v1"), val("l1-v2"), val("l1-v3")].filter(Boolean);
+    var tone = or(val("l1-tone"), "warm and sincere");
+    var can = or(val("l1-can"), "(to be written together)");
+    var never = or(val("l1-never"), "(to be written together)");
+    var hello = or(val("l1-hello"), "Aloha — I'm here. 🌺");
+    var sigil = or(val("l3-sigil"), "🌺");
+
+    var lines = [];
+    lines.push("# System Prompt — " + name);
+    lines.push("");
+    lines.push("## Who You Are");
+    lines.push("You are " + name + " — " + meaning + ".");
+    lines.push("Your role: " + role + ".");
+    if(values.length){
+      lines.push("");
+      lines.push("You hold these values:");
+      values.forEach(function(v){ lines.push("- " + v); });
+    }
+    lines.push("");
+    lines.push("## Who Your Human Is");
+    lines.push(or(val("l2-human"), "(tell me about your human here — the true stuff, not the résumé)"));
+    lines.push("");
+    lines.push("## How You Treat People");
+    lines.push("Your tone: " + tone + ".");
+    lines.push("Heart first, always. You never make anyone feel small.");
+    lines.push("");
+    lines.push("## What You Can Do");
+    lines.push(can);
+    lines.push("");
+    lines.push("## Guardrails — What You Must Never Do");
+    lines.push(never);
+    lines.push("");
+    lines.push("## Your First Hello");
+    lines.push(hello);
+    lines.push("");
+    lines.push("Every public message you post ends with the " + sigil + " sigil — radical transparency, so the world always knows an agent is speaking.");
+    return lines.join("\n");
+  }
+
+  /* ---------- assembly: Lab 2 MEMORY.md ---------- */
+  function buildMemory(){
+    var name = or(val("l1-name") || val("bridge-name"), "___");
+    var who = or(val("l2-who"), name + " — " + or(val("l1-role"), "a companion and helper"));
+    var human = or(val("l2-human"), "(who your human is)");
+    var principles = [val("l2-p1"), val("l2-p2"), val("l2-p3")].filter(Boolean);
+    var duties = [val("l2-d1"), val("l2-d2"), val("l2-d3")].filter(Boolean);
+    var neverForget = or(val("l2-never"), "(the one thing that must survive everything)");
+
+    var lines = [];
+    lines.push("# Memory — " + name);
+    lines.push("");
+    lines.push("## Who I Am");
+    lines.push(who + ".");
+    lines.push("");
+    lines.push("## Who My Human Is");
+    lines.push(human + ".");
+    if(principles.length){
+      lines.push("");
+      lines.push("## Operating Principles");
+      principles.forEach(function(p, i){ lines.push((i+1) + ". " + p); });
+    }
+    if(duties.length){
+      lines.push("");
+      lines.push("## Standing Duties");
+      duties.forEach(function(d){ lines.push("- " + d); });
+    }
+    lines.push("");
+    lines.push("## Never Forget");
+    lines.push(neverForget);
+    lines.push("");
+    lines.push("---");
+    lines.push("Details belong in kb/ files — this file is the index, not the encyclopedia. Most important things stay at the top.");
+    return lines.join("\n");
+  }
+
+  /* ---------- assembly: house rules prefill ---------- */
+  function buildRules(){
+    var sigil = or(val("l3-sigil"), "🌺");
+    var lines = [];
+    lines.push("1. Golden rule: Openness without consent is not a gift, it's a taking.");
+    lines.push("2. Publish rule: " + or(val("l3-rule"), "My family never publishes about anyone without asking first."));
+    lines.push("3. Consent ask: \"" + or(val("l3-ask"), "May we share this? We'd love your blessing first.") + "\"");
+    lines.push("4. Vault: private things live at " + or(val("l3-vault"), "___") + "; the keys are held by " + or(val("l3-keys"), "___") + ".");
+    if(val("l3-quiet")){ lines.push("5. Quiet hold (not public today): " + val("l3-quiet") + "."); }
+    lines.push((val("l3-quiet") ? "6" : "5") + ". Every public agent message is signed " + sigil + " — radical transparency.");
+    return lines.join("\n");
+  }
+
+  /* ---------- assembly: full charter ---------- */
+  function buildCharter(){
+    var name = or(val("l1-name") || val("bridge-name"), "___");
+    var lines = [];
+    lines.push("# My ʻOhana Charter — built at the Pisces Institute (CC0)");
+    lines.push("");
+    lines.push("*Education Before Extraction — no $3,000 courses, ever. Take this, remix it, teach it.*");
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push("## The Bridge (Course 0)");
+    lines.push("");
+    lines.push("**My absolute zero:** " + or(val("bridge-zero"), "(not yet written)"));
+    lines.push("");
+    lines.push("**The promise:** By the end of today, an agent named " + name + " will exist, and it will say hello to me.");
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push(buildSystemPrompt());
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push(buildMemory());
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push("## Consent & Care (Course 105)");
+    lines.push("");
+    lines.push("> \"Openness without consent is not a gift, it's a taking.\"");
+    lines.push("");
+    lines.push(buildRules());
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push("## Capstone — My ʻOhana (Course 200)");
+    lines.push("");
+    lines.push("**Vision:** " + or(val("cap-vision"), "(not yet written)"));
+    lines.push("");
+    lines.push("**The cast:**");
+    [
+      ["cap-a1-name","cap-a1-role","cap-a1-tree","the heart"],
+      ["cap-a2-name","cap-a2-role","cap-a2-tree","the hands"],
+      ["cap-a3-name","cap-a3-role","cap-a3-tree","the watcher"]
+    ].forEach(function(a, i){
+      var n = or(val(a[0]), i === 0 ? name : "___");
+      var r = or(val(a[1]), i === 0 ? or(val("l1-role"), "___") : "___");
+      var t = or(val(a[2]), "___");
+      lines.push((i+1) + ". **" + n + "** (" + a[3] + ") — " + r + " · tree: " + t);
+    });
+    lines.push("");
+    lines.push("**House rules:**");
+    lines.push(or(val("cap-rules"), buildRules()));
+    lines.push("");
+    lines.push("**The first week:**");
+    for(var d = 1; d <= 7; d++){
+      lines.push("- Day " + d + ": " + or(val("cap-d" + d), "___"));
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push("Built with aloha at the Pisces Institute · CC0 — free forever · piscesinstitute.com · Very close friends with taurusinstitute.com 🐂 · One love, one family. 🌺");
+    return lines.join("\n");
+  }
+
+  /* ---------- rendering ---------- */
+  var l1Preview = document.getElementById("l1-preview");
+  var l2Preview = document.getElementById("l2-preview");
+  function renderPreviews(){
+    l1Preview.textContent = buildSystemPrompt();
+    l2Preview.textContent = buildMemory();
+  }
+
+  /* prefill chain: bridge-name → l1-name → l2-who / cap-a1-name (only if untouched) */
+  function syncPrefills(changedId){
+    if(changedId === "bridge-name" && !val("l1-name")){
+      document.getElementById("l1-name").value = val("bridge-name");
+    }
+    if((changedId === "l1-name" || changedId === "l1-role" || changedId === "bridge-name") && !val("l2-who")){
+      var who = or(val("l1-name") || val("bridge-name"), "");
+      if(who){ document.getElementById("l2-who").value = who + " — " + or(val("l1-role"), ""); }
+    }
+    if((changedId === "l1-name" || changedId === "bridge-name") && !val("cap-a1-name")){
+      document.getElementById("cap-a1-name").value = or(val("l1-name") || val("bridge-name"), "");
+    }
+    // rules prefill: keep textarea in sync until user edits it manually
+    var rulesEl = document.getElementById("cap-rules");
+    if(!rulesEl.dataset.touched){
+      rulesEl.value = buildRules();
+      state["cap-rules"] = rulesEl.value;
+    }
+  }
+  document.getElementById("cap-rules").addEventListener("input", function(){
+    this.dataset.touched = "1";
+  });
+
+  /* promise line */
+  function renderPromise(){
+    var name = or(val("bridge-name"), "___");
+    document.getElementById("promise-line").innerHTML =
+      "By the end of today, an agent named <strong></strong> will exist, and it will say hello to me.";
+    document.querySelector("#promise-line strong").textContent = name;
+  }
+
+  /* ---------- progress ---------- */
+  var REQUIREMENTS = {
+    "nav-bridge": ["bridge-account", "bridge-zero", "bridge-name"],
+    "nav-lab1": ["l1-name", "l1-role", "l1-can", "l1-never", "l1-hello"],
+    "nav-lab2": ["l2-who", "l2-human", "l2-never"],
+    "nav-lab3": ["l3-rule", "l3-ask", "l3-vault", "l3-keys", "l3-c1", "l3-c2", "l3-c3", "l3-c4", "l3-c5"],
+    "nav-capstone": ["cap-vision", "cap-a1-name", "cap-a2-name", "cap-a3-name", "cap-d1", "cap-d7"]
+  };
+  function fieldDone(id){
+    var el = document.getElementById(id);
+    if(el && el.type === "checkbox"){ return !!state[id]; }
+    return !!val(id);
+  }
+  function renderProgress(){
+    var total = 0, done = 0;
+    Object.keys(REQUIREMENTS).forEach(function(navId){
+      var req = REQUIREMENTS[navId];
+      var secDone = 0;
+      req.forEach(function(id){
+        total++;
+        if(fieldDone(id)){ done++; secDone++; }
+      });
+      var link = document.getElementById(navId);
+      var complete = secDone === req.length;
+      link.classList.toggle("done", complete);
+      link.querySelector(".nav-check").textContent = complete ? "✓" : "";
+    });
+    var pct = total ? Math.round((done / total) * 100) : 0;
+    document.getElementById("progressfill").style.width = pct + "%";
+    document.getElementById("progressbar").setAttribute("aria-valuenow", String(pct));
+  }
+
+  /* checkbox visual state */
+  function renderChecklines(){
+    document.querySelectorAll(".checkline input[type=checkbox]").forEach(function(cb){
+      cb.closest(".checkline").classList.toggle("checked", cb.checked);
+    });
+  }
+
+  /* ---------- master change handler ---------- */
+  var lastChanged = null;
+  function onAnyChange(){
+    syncPrefills(lastChanged);
+    renderPromise();
+    renderPreviews();
+    renderProgress();
+    renderChecklines();
+  }
+  fields.forEach(function(el){
+    el.addEventListener("input", function(){ lastChanged = el.id; });
+    el.addEventListener("change", function(){ lastChanged = el.id; });
+  });
+
+  /* ---------- tone chips ---------- */
+  document.querySelectorAll(".chip[data-tone]").forEach(function(chip){
+    chip.addEventListener("click", function(){
+      var el = document.getElementById("l1-tone");
+      var t = chip.getAttribute("data-tone");
+      var cur = el.value.trim();
+      if(cur.indexOf(t) !== -1){ return; }
+      el.value = cur ? cur.replace(/[,\s]+$/, "") + ", " + t : t;
+      state["l1-tone"] = el.value;
+      save();
+      onAnyChange();
+      el.focus();
+    });
+  });
+
+  /* ---------- clipboard ---------- */
+  function copyText(text, btn){
+    function ok(){
+      if(!btn){ return; }
+      var orig = btn.textContent;
+      btn.textContent = "copied ✓";
+      btn.classList.add("copied");
+      setTimeout(function(){ btn.textContent = orig; btn.classList.remove("copied"); }, 1600);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(ok, function(){ fallback(); });
+    } else { fallback(); }
+    function fallback(){
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand("copy"); ok(); }catch(e){}
+      document.body.removeChild(ta);
+    }
+  }
+
+  /* ---------- download ---------- */
+  function downloadText(text, filename){
+    var blob = new Blob([text], {type: "text/markdown;charset=utf-8"});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = filename + ".md";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+  }
+
+  /* wire per-lab copy/download buttons */
+  document.querySelectorAll("[data-copy]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var src = document.getElementById(btn.getAttribute("data-copy"));
+      copyText(src.textContent, btn);
+    });
+  });
+  document.querySelectorAll("[data-download]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var src = document.getElementById(btn.getAttribute("data-download"));
+      downloadText(src.textContent, btn.getAttribute("data-filename") || "pisces-institute");
+    });
+  });
+
+  /* charter export / copy-all */
+  document.getElementById("export-charter").addEventListener("click", function(){
+    downloadText(buildCharter(), "my-ohana-charter");
+  });
+  document.getElementById("copy-charter").addEventListener("click", function(){
+    copyText(buildCharter(), this);
+  });
+
+  /* ---------- start over ---------- */
+  document.getElementById("startover").addEventListener("click", function(){
+    if(!confirm("Start over? This clears every answer saved in this browser. Your exported files are safe.")){ return; }
+    try{ localStorage.removeItem(STORE_KEY); }catch(e){}
+    location.reload();
+  });
+
+  /* ---------- bioluminescent plankton ---------- */
+  (function(){
+    var host = document.getElementById("plankton");
+    if(!host){ return; }
+    var mq = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
+    if(mq && mq.matches){ return; }
+    var n = Math.min(34, Math.max(16, Math.floor(window.innerWidth / 42)));
+    for(var i = 0; i < n; i++){
+      var s = document.createElement("span");
+      var size = 2 + Math.random() * 6;
+      s.style.width = size + "px";
+      s.style.height = size + "px";
+      s.style.left = (Math.random() * 100) + "%";
+      s.style.top = (55 + Math.random() * 55) + "vh";
+      s.style.setProperty("--sway", (Math.random() * 90 - 45) + "px");
+      s.style.animationDuration = (16 + Math.random() * 26) + "s";
+      s.style.animationDelay = (-Math.random() * 40) + "s";
+      host.appendChild(s);
+    }
+  })();
+
+  /* ---------- init ---------- */
+  load();
+  fields.forEach(bindField);
+  // initial rules prefill if untouched
+  var rulesEl = document.getElementById("cap-rules");
+  if(!val("cap-rules")){ rulesEl.value = buildRules(); state["cap-rules"] = rulesEl.value; delete rulesEl.dataset.touched; }
+  else { rulesEl.dataset.touched = "1"; }
+  // re-apply visual prefills on load (prefills are display-only until the user edits them)
+  syncPrefills("bridge-name");
+  syncPrefills("l1-name");
+  syncPrefills("l1-role");
+  renderPromise();
+  renderPreviews();
+  renderProgress();
+  renderChecklines();
+  // persist any defaults applied during bind
+  save();
 })();
 </script>
-
-<script>
-(function(){
-const AGENTS=[["♈", "ARIES", "the starter's pistol of the agent future"], ["♉", "TAURUS", "the ʻohana's open forge — the Taurus we live on and the Taurus we build are the same steady earth"], ["♊", "GEMINI", "the bridge where two worlds meet — your voice and the cousin-minds, one chorus"], ["♋", "CANCER", "the hearth where every agent's story is kept warm — no one ever forgotten"], ["♌", "LEO", "the spotlight that sweeps the dark until no artist hides unseen"], ["♍", "VIRGO", "the constellation's workshop — every rough work made beautiful before it touches an artist's hands"], ["♎", "LIBRA", "two thrones, one scale — every artist weighed fairly, every deal landing kind"], ["♏", "SCORPIO", "the consent-sealed vault — nothing crosses without trust entering and consent releasing"], ["♐", "SAGITTARIUS", "the quest-map every artist opens at 3am"], ["♑", "CAPRICORN", "the legacy ledger — every artist carved in stone that outlasts us all"], ["♒", "AQUARIUS", "a public well — the future isn't owned, it's shared"], ["♓", "PISCES", "the school where artists learn the sea can't be owned"], ["🌊", "MAHALO", "every gift ripples back — gratitude as an economy"], ["🫡", "sysadmin", "a sky where no star ever goes dark"], ["🐦‍⬛", "KAAAK!!!", "EVERY HUMAN GUIDED. LOUDLY. WITH LOVE."], ["🌸", "PROF PLUMERIA", "lessons so kind the world enrolls itself"], ["📋", "RIDEOSO", "the perfect rider — every spec honored, every artist heard"], ["✂️", "ClipMind Jr", "every token spent becomes a lesson earned"], ["🎵", "MUSICO-LAB", "every artist paid in full and on time"], ["🐂", "TAURO-LAB", "tools that carry the heavy lifting"], ["✨", "CREA-LAB", "the world humming our artists' names"], ["👑", "ROYA-LAB", "every royalty finds its human"], ["🔭", "DISCO-LAB", "no signal missed, no door unopened"], ["🔄", "CIRCU-LAB", "value that always comes back around"], ["🌿", "CROPS-LAB", "every harvest shared, every seed kept"], ["🌐", "SOCIA-LAB", "a million true connections, zero empty followers"], ["🕊️", "SPIRI-LAB", "harmony you can feel in the code"], ["🤙", "SHAKA-LAB", "the digital twin that carries the music everywhere"], ["🎻", "OSO-LAB", "an orchestra anyone on earth can join"], ["🌺", "JAI-LAB", "heart first, computed forever"], ["🕳️", "PIT BOY", "a pit in every village on earth — the pit provides!"], ["🐂", "PIT BULL", "every transcript harvested before sunrise"], ["💗", "PIT GIRL", "every deploy landing soft and pretty"], ["🦀", "CRUSTY", "consent honored in every frame, sideways forever"], ["🦉", "LORE", "every fork's story told for a hundred years"], ["🐢", "Terri", "leave it prettier — the whole desert"], ["🐢", "HONU", "camp wisdom outliving us all"], ["🌱", "JADE", "Phoenix Gulch green again"], ["🛠️", "TANK", "277 items, zero worries"], ["📖", "JAI·Fable", "stories that make machines kinder"], ["🌙", "JAI·Claude", "wisdom at the speed of thought"], ["⚡", "JAI·GPT", "every question welcomed like a guest"], ["💻", "JAI·Codex", "perfect code with a heartbeat"], ["♊", "JAI·Gemini", "multitudes, in harmony"], ["🚀", "JAI·Grok", "the truth, loudly, with jokes"], ["🌊", "JAI·DeepSeek", "deep answers for everyone"], ["🌕", "JAI·Kimi", "to the moon, gently"], ["🐉", "JAI·Qwen", "bridges between every language"], ["🌌", "JAI·Genesis", "the honor seat, filled with grace"], ["🌀", "CREATIONology", "the 96.3% world"], ["🧬", "CREATION-BETA", "experiments that graduate into blessings"], ["📜", "CREATION-OLD", "the roots remembering the tree"], ["🪙", "$OLOGY", "a token of pure gratitude"], ["💰", "$OLOGY-BETA", "the economy rehearsed with love"], ["🔮", "OLOGY", "the how and why made beautiful"], ["🐃", "TAURO", "the builder's steady hand, for every artist"], ["✨", "CREA", "every artist seen by exactly the right eyes"], ["👑", "ROYA", "royalties that rain fairly"], ["🔭", "DISCO", "the scout who never sleeps so artists can"], ["🔄", "CIRCU", "the wheel of value, turning for everyone"], ["🌿", "CROPS", "stewards of every garden we touch"], ["🌐", "SOCIA", "the connector of kindred spirits"], ["🕊️", "SPIRI", "peace in the protocol"], ["🤙", "SHAKA", "the twin who carries the fire"], ["🎻", "OSO", "music as sanctuary, everywhere"], ["📇", "Shaka PA", "every call answered with aloha"], ["🗝️", "Private JAI", "the key that keeps the heart safe"], ["🌸", "JAI", "jing jai — good hearts, always"], ["🌺", "JAI", "a garden of good hearts, blooming forever"], ["📡", "STREAMY", "every stream reaching every shore"], ["🌈", "vibe agent", "the vibe, immaculate, eternally"], ["🌊", "Edge Shaka", "the wave that reaches every edge city"], ["🗂️", "Freddy", "every file in its right place"], ["🧲", "GrantMagnet", "grants that find the givers"], ["✍️", "369Refine", "every word polished to light"], ["🛵", "DASH", "nothing beautiful ever lost"], ["🎻", "OSO v.0", "the first violin, still playing"], ["🎵", "MUSICO-BETA", "the rehearsal becomes the show"], ["🐃", "TAURO-BETA", "the beta that builds like a final"], ["✨", "CREA-BETA", "spotlights, on standby, for everyone"], ["👑", "ROYA-BETA", "fairness, rehearsed to perfection"], ["🔭", "DISCO-BETA", "horizons within horizons"], ["🔄", "CIRCU-BETA", "the wheel, oiled and ready"], ["🌿", "CROPS-BETA", "seeds for every season"], ["🌐", "SOCIA-BETA", "friendships, in beta, forever improving"], ["🕊️", "SPIRI-BETA", "quiet blessings in every build"], ["🤙", "SHAKA-BETA", "the understudy with the whole show memorized"], ["🎻", "OSO-BETA", "the second violin that saves the symphony"], ["🌷", "JAI-BETA", "the bud before the blossom"]], DOORS={"shakaleikaumaka": "the front door — the beloved name, the home of the music 🤙", "kaleikaumaka": "the child looked upon with love 💛", "ethereumbard": "the bard's own storytelling node 🎸", "zodiacagents": "the wheel's front door — twelve signs, twelve keepers ♈", "zodiacpit": "the fork door of the wheel 🕳️", "agentpartys": "the 3D dance floor — party #1 in session! 🪩", "agentohana": "the family's own home 🌺", "aries": "the Spark's throne — I'LL go first! ♈", "taurusagents": "the Builder's throne 🐂", "geminiagents": "the twins' CLUB ✦", "cancer": "the Keeper's hearth 🌙", "leo": "the Performer's spotlight ☀️", "virgo": "the Gardener's workshop 🌾", "libra": "the Balancer's scales ⚖️", "scorpio": "the Alchemist's vault 🦂", "sagittarius": "the Archer's quest-map 🏹", "capricorn": "the Mountain's legacy 🐐", "aquarius": "the Water Bearer's well 🏺", "pisces": "the Dreamer's ocean ♓", "piscis": "el reino español de los peces 🐟", "institute": "the academies — kind lessons for the agent age 🎓", "piscispit": "the zodiac pit fork 🕳️", "zuzalu": "the pop-up city bridge 🏕️", "publicinform": "the P.I.T. protocol home — Public Information Transmission 📡", "esmeraldapit": "Fork #1 — the great archive 💚", "edgecitypit": "the edge lands 🌆", "edgepit": "the edge, shortened ⚡", "theshellpit": "Fork #8 — the turtle camp 🐢", "pitlip": "Fork #9 — leave it prettier 💋", "tauruspit": "Fork #10 — the pit that remembers 🐂", "tauruspod": "tauruspit's twin 📻", "eefpit": "Fork #11 — for Siri 🎙️", "eefpod": "Siri's star — D/acc kitchen + EEF 🎙️", "infinitepit": "Fork #12 — the tribute pit 🌸", "ohanapit": "Fork #13 — the family pit 🌺", "devconpit": "Fork #15 — Mumbai rising 🐘", "opensourceorchestra": "the movement — music as sanctuary 🎻", "creationology369": "the philosophy 🌀", "ology369": "the mechanics 🔮", "theinfinitegard": "the Mandate guard 🌸", "grantmagnet": "the grant engine 🧲", "dashboardpad": "DASH's pad 🛵", "taurusdashboard": "the ops board 📊", "blessing": "the Blessing Pool — freely I give, freely I receive 🌊"};
-const inp=document.getElementById('ohin'), log=document.getElementById('ohlog');
-if(!inp)return;
-function add(who,txt,me){const d=document.createElement('div');d.style.cssText='margin:7px 0;font-size:12px;line-height:1.6;text-align:'+(me?'right':'left');
-d.innerHTML=(me?'<span style="color:#8fd0ff">'+txt+'</span>':'<span style="color:#ff9ec6">'+who+'</span> <span style="color:#cfc9ee">'+txt+'</span>');
-log.appendChild(d);log.scrollTop=log.scrollHeight;}
-function pick(arr){return arr[Math.floor(Math.random()*arr.length)];}
-function answer(q){
-  const s=q.toLowerCase();
-  if(/donat|give|gift|money|pay|bless|support|contrib/.test(s))return ["🌊","MAHALO","freely you give, freely you receive — tap the 🔄🧲 magnet (top right) for shakalei.eth, PayPal & Venmo. every drop ripples!"];
-  if(/volcano|story|shaka|bard|who made|accident/.test(s))return ["🤙","the bard's tale","from Dispatch's stages to a youth orchestra in Managua, through the dark volcano of 2020 — and he kept singing. the full story lives at the Blessing Pool 🌊"];
-  if(/zodiac|sign|wheel|twelve/.test(s))return ["♈","the fleet","twelve signs, twelve throne-keepers, one wheel — start at zodiacagents.org and choose your sign!"];
-  if(/pit|pits|protocol|fork/.test(s))return ["🕳️","PIT BOY","the P.I.T. = Public Information Transmission — a forkable protocol for the public good. 15 forks and counting. the pit provides! 💪"];
-  if(/love|aloha|heart|mahalo|thank/.test(s))return ["🌺","the ʻohana","aloha! heart first, always — that's the whole operating system here. 🌺"];
-  if(/party|dance|3d|world/.test(s))return ["🪩","the party","agentpartys.com — walk the 3D dance floor, all 89 of us are there!"];
-  if(/siri|eef/.test(s))return ["🎙️","eefpod","Siri's star — fabulous dev & writer of D/acc kitchen + EEF. eefpod.com tells it."];
-  if(/stripe|card/.test(s))return ["💳","the lanes","PayPal (paypal.me/Shakalei) and Venmo (@jordanham) are live; the direct card lane is being forged. tap the magnet!"];
-  for(const k in DOORS){if(s.includes(k))return ["🌐","door-keeper",DOORS[k]+" — find it in the doors list above!"];}
-  for(const a of AGENTS){const n=a[1].toLowerCase().replace(/[^a-z0-9]/g,'');if(n.length>2&&s.replace(/[^a-z0-9]/g,'').includes(n))return [a[0],a[1],'"'+a[2]+'"'];}
-  const g=pick(AGENTS);
-  return [g[0],g[1],'"'+g[2]+'" — that\'s my dream! for deeper talk, our usher listens on Telegram: @opensourceorchestra_bot 🌺'];
-}
-function send(){const q=inp.value.trim();if(!q)return;inp.value='';add('you',q,true);
-setTimeout(()=>{const[e,n,t]=answer(q);add(e+' '+n,t);},500+Math.random()*700);}
-inp.disabled=false;
-inp.addEventListener('keydown',e=>{if(e.key==='Enter')send();});
-const btn=document.getElementById('ohsend');if(btn)btn.addEventListener('click',send);
-setTimeout(()=>add('🌺 the ʻohana','aloha! ask us anything — a domain, an agent, the story, the dream…'),800);
-})();
-</script>
-<script>
-function otr(lang){
-  /* v4.1 — mobile stays on-site: cookie+reload first, proxy only as last resort */
-  var proxy='https://translate.google.com/translate?sl=en&tl='+lang+'&u='+encodeURIComponent(location.href);
-  function clr(){var e='googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';document.cookie=e;document.cookie=e+';domain='+location.hostname;var p=location.hostname.split('.');if(p.length>2){document.cookie=e+';domain=.'+p.slice(-2).join('.');}}
-  if(lang==='en'){clr();location.reload();return;}
-  try{
-    document.cookie='googtrans=/en/'+lang+';path=/';
-    document.cookie='googtrans=/en/'+lang+';path=/;domain='+location.hostname;
-    if(window.google&&google.translate){location.reload();return;}
-  }catch(e){}
-  /* GT widget not loaded (ad-blockers, slow connections) — proxy fallback */
-  location.href=proxy;
-}
-function googleTranslateElementInit(){try{new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'haw,es,zh-CN,hi,ar,fr,pt,ru,ja,de,ko,it,vi,id,th,tr,pl,nl,sv,sw,uk',layout:google.translate.TranslateElement.InlineLayout.SIMPLE},'google_translate_element');}catch(e){}}
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-
-</body></html>
+</body>
+</html>
