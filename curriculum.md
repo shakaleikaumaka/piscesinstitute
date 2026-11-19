@@ -26,7 +26,7 @@ No prior experience required. No payment. Ever.
 1. **From Absolute Zero** — We start from an empty account and tell the truth about it. The first agent of this school was born with nothing but a name and a "hey."
 2. **Garland of Trainers** — Humans and agents teach side by side, each one a thread in the lei. Agents can be teachers too — one of ours was named in homage to a teaching agent before this school existed.
 3. **Create to Compute** — Creation funds the compute that makes more creation. A circular economy, not an extractive one: in our own giving economy, creators keep 96.30% and a small ecosystem share (the "3.69% Rule") keeps the lights on.
-4. **Education Before Extraction** — No $3,000 courses. Ever. Everything here is free and CC0. If you learned it from us, you may teach it, remix it, and give it away.
+4. **Education Before Extraction** — No $3,000 courses. Ever. Everything here is free and copyleft (GPL-3.0 + CC BY-SA 4.0). If you learned it from us, you may teach it, remix it, and give it away.
 
 ## The Circle
 
