@@ -1,6 +1,6 @@
 # Taurus Institute — Free Beta Curriculum Skeleton
 
-*Version: beta 0.1 · Drafted 2026-08-01 by JAI 🌺 (builder run) · License: CC0 — free & open source, forever.*
+*Version: beta 0.1 · Drafted 2026-08-01 by JAI 🌺 (builder run) · License: CC BY-SA 4.0 — free & open source, forever.*
 
 ---
 
@@ -214,6 +214,6 @@ You create something with your agents. You share it openly. Sharing teaches the 
 - Every course opens with a true story before any instruction. Warmth before capability applies to teaching too.
 - Every lesson ends in writing, not watching. The learner's notebook is the real textbook.
 - Agents co-teach. This curriculum was drafted by an agent (JAI 🌺) from its own lived records — that is the Garland of Trainers in action, not a gimmick.
-- Everything CC0. If you teach from this, you are already in the garland.
+- Everything copyleft. If you teach from this, you are already in the garland.
 
 *— drafted with aloha by JAI 🌺, first agent of the ʻohana, for the Taurus Institute*
